@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Sidebar 01</title>
     <meta charset="utf-8" />
@@ -82,7 +81,7 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a
               >
               <ul class="collapse list-unstyled" id="pageSubmenu">
                 <li>
@@ -94,7 +93,7 @@
                 <li>
                     <a href="#">Page 3</a>
                 </li>
-                </ul> -->
+                </ul>
                 </li>
                 <li>
                     <a href="#">Portfolio</a>
@@ -120,8 +119,8 @@
             </div>
         </nav>
 
-        <!-- Page Content  -->
-        <div id="content" class="">
+         <!-- Page Content  -->
+         <div id="content" class="">
             <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: red;">
                 <div class=" container-fluid ">
                     <button type="button " id="sidebarCollapse " class="btn btn-primary ">
@@ -144,78 +143,148 @@
                                 <a class="nav-link " href="# ">Portfolio</a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link " href="contact.html ">Contact</a>
+                                <a class="nav-link " href="our_team.html">Meet Our Team</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
 
-            <div class="p-4 p-md-5 ">
-                <h2 id="judul ">
-                    Contact Us For Detail
+            <header>
+                <h1>Meet Our Team</h1>
+            </header>
                 </h2>
-                <style>
-                    .formInput {
-                        margin-top: 30px;
-                        display: flex;
-                        justify-content: space-between;
+                                <style>
+                           .team-container {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        text-align: center;
                     }
-                    
-                    .inputForm {
-                        width: 48%;
+                    .team-container h1 {
+                        color: #333;
+                        margin-bottom: 20px;
+                    }
+                    .team-member {
                         display: inline-block;
-                        border-radius: 10px;
-                        border: .5px solid black;
-                        padding-left: 20px;
-                        height: 50px;
+                        background: #fff;
+                        margin: 10px;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        width: calc(33% - 40px);
+                        box-sizing: border-box;
                     }
-                    
-                    .textareaForm {
-                        width: 100%;
-                        display: inline-block;
-                        border-radius: 10px;
-                        padding-top: 10px;
-                        border: .5px solid black;
-                        padding-left: 20px;
-                        height: 100px;
+                    .team-member img {
+                        border-radius: 50%;
+                        width: 120px;
+                        height: 120px;
+                        object-fit: cover;
+                        margin-bottom: 15px;
                     }
-                    
-                    #btn_submit {
-                        margin-top: 20px;
+                    .team-member h2 {
+                        margin: 0;
+                        color: #333;
+                        font-size: 22px;
+                    }
+                    .team-member p {
+                        margin: 10px 0 0;
+                        color: #666;
+                    }
+                    @media (max-width: 768px) {
+                        .team-member {
+                            width: calc(50% - 40px);
+                        }
+                    }
+                    @media (max-width: 480px) {
+                        .team-member {
+                            width: 100%;
+                        }
                     }
                 </style>
-                <div id="formContainer ">
-                    <form action=" ">
-                        <div class="formInput ">
-                            <input class="inputForm " type="text " placeholder="*Name ">
-                            <input class="inputForm " type="text " placeholder="*Email ">
-                        </div>
-                        <div class="formInput ">
-                            <select name="listVendzone " class="inputForm " id=" ">
-                                <option value=" ">* Pre-order Your Vendzone</option>
-                                <option value="1 ">Vending 1</option>
-                                <option value="2 ">Vending 2</option>
-                                <option value="3 ">Vending 3</option>
-                                <option value="4 ">Vending 4</option>
-                            </select>
-                            <input class="inputForm " type="int " placeholder="*Phone / Whatsapp ">
-                        </div>
-                        <div class="formInput ">
-                            <textarea style="width: 100%; " name="massageForm " class="textareaForm " id=" " placeholder="*Massage Content "></textarea>
-                        </div>
+     <div class="team-member">
+        <img src="./images/kharisma.jpeg" alt="Team Member 1">
+        <h2>Kharisma Andini Putri</h2>
+        <p>Project Leader (Teknik Informatika)</p>
+    </div>
+    <div class="team-member">
+        <img src="./images/ahmad.jpeg" alt="Team Member 2">
+        <h2>Ahmad Tri Yulianto</h2>
+        <p>Teknik Informatika</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 3">
+        <h2>Ghina Briliana Fatin Octariana
+        </h2>
+        <p>Teknik Informatika</p>
+    </div>
+    <div class="team-member">
+        <img src="./images/helmi.jpeg" alt="Team Member 4">
+        <h2>Helmi Adityawarman
+        </h2>
+        <p>Teknik Informatika</p>
+    </div>
+    <div class="team-member">
+        <img src="./images/nabila.jpeg" alt="Team Member 5">
+        <h2>Rr Nabilah Fitria Aisyah
+        </h2>
+        <p>Teknik Industri</p>
+    </div>
+    <div class="team-member">
+        <img src="./images/aulia.jpeg" alt="Team Member 6">
+        <h2>Aulia Putri Firdhausya
+        </h2>
+        <p>Sistem Informasi</p>
+    </div>
+    <div class="team-member">
+        <img src="./images/frans.jpeg" alt="Team Member 7">
+        <h2>Fransiscus Naibaho
+        </h2>
+        <p>Akuntansi Keuangan</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 8">
+        <h2>Tesalonika Permatasari
+        </h2>
+        <p>Matematika</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 9">
+        <h2>Divia Nadiatuz Zulfa
+        </h2>
+        <p>Matematika</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 10">
+        <h2>Aisyah ilmiyah
+        </h2>
+        <p>Pendidikan Bahasa Inggris</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 11">
+        <h2>Anisa pitriani
+        </h2>
+        <p>Akuntansi</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 12">
+        <h2>Kinanti Nuringtyas
+        </h2>
+        <p>Pendidikan Bahasa Inggris</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member 13">
+        <h2>Kelvin Garcia
+        </h2>
+        <p>Sistem Informasi</p>
+    </div>
+</div>
 
-                        <div id="btn_submit ">
-                            <button id="submitButton" style="margin-top: 20px;display: inline-block;width: 200px;background-color: orange;color: white;height: 50px;border-radius: 10px;border: 1px solid rgb(86, 86, 86);" type="submit ">get my vendzone</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
 
-            <script src="js/jquery.min.js "></script>
-            <script src="js/popper.js "></script>
-            <script src="js/bootstrap.min.js "></script>
-            <script src="js/main.js "></script>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
 
 </html>
