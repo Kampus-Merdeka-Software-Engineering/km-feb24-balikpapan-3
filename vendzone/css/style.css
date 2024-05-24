@@ -10989,9 +10989,11 @@ h5,
 }
 
 .navbar {
+    position: relative;
     padding: 15px 10px;
-    background-image: url("../images/topnav3.jpg");
-    background-size: 100vw 100vh;
+    background-image: url("../images/topnav4.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 300px;
     border: none;
@@ -11000,6 +11002,42 @@ h5,
     -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Ensure the text appears above the overlay */
+}
+
+.text-overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: white; /* Set text color */
+    letter-spacing: 3px; /* Tambahkan jarak antar huruf */
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is behind other content */
+}
+
+
+/* Adjust the toggle sidebar button styles */
+#sidebarCollapse {
+    position: relative; /* Ensure proper positioning */
+    z-index: 2; /* Ensure the button appears above the overlay */
+}
+
 
 .navbar-btn {
     -webkit-box-shadow: none;

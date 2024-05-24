@@ -59,29 +59,35 @@
 
 <body>
 
+
+
     <div class="wrapper d-flex align-items-stretch">
         <nav id="sidebar">
             <div class="p-4 pt-5">
                 <a href="#" class="img logo mb-5" style="background-image: url(images/vendzone.png)" height="100px" widht="100px"></a>
                 <ul class="list-unstyled components mb-5">
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a
-              >
+                        <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a> -->
               <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                  <a href="main.html">Our Vendzone</a>
-                    </li>
-                    <li>
-                        <a href="#">Why Vendzone</a>
-                    </li>
-                    <li>
-                        <a href="#">Meet Our Team</a>
-                    </li>
+                
+                    
                 </ul>
+                <li>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">Our Vendzone</a>
                 </li>
+                </li>
+                <li>
+                    <a href="#">Why Vendzone</a>
+                </li>
+                <li>
+                    <a href="#">Meet Our Team</a>
+                </li>
+                <!-- <li>
+                    <a href="#">About</a>
+                </li> -->
                 <li>
                     <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a
               >
@@ -98,10 +104,10 @@
                 </ul> -->
                 </li>
                 <li>
-                    <a href="#">Meet Our Team</a>
+                    <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="#">Meet Our Team</a>
                 </li>
                 </ul>
 
@@ -132,7 +138,13 @@
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fa fa-bars"></i>
             </button>
-
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Removed the existing content -->
+                <div class="text-overlay"> <!-- Center the text -->
+                    <h1 style="color: white; font-weight: bold;">VENDZONE</h1>
+                </div>
+            </div>
+            
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
