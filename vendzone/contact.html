@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        #judul {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        .cardVending {
+            text-align: center;
+            width: 22%;
+            height: 450px;
+            box-shadow: 2px 2px 2px 2px rgb(142, 142, 142);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
+        .cardVending:hover {
+            box-shadow: 4px 4px 4px 4px rgb(56, 56, 56);
+        }
+        
+        .penjelasan h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .penjelasan p {
+            text-align: justify;
+            font-size: 13px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        hr {
+            width: 50%;
+            height: .5px;
+            background-color: black;
+        }
+        
+        #cardContainer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .formInput {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .inputForm {
+            width: 48%;
+            display: inline-block;
+            border-radius: 10px;
+            border: .5px solid black;
+            padding-left: 20px;
+            height: 50px;
+        }
+        
+        .textareaForm {
+            width: 100%;
+            display: inline-block;
+            border-radius: 10px;
+            padding-top: 10px;
+            border: .5px solid black;
+            padding-left: 20px;
+            height: 100px;
+        }
+        
+        #btn_submit {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="p-4 pt-5">
+                <a href="#" class="img logo mb-5" style="background-image: url(images/vendzone.png)" height="100px" width="100px"></a>
+                <ul class="list-unstyled components mb-5">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="main.html">Our Vendzone</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer">
+                    <p>
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | This template is made with
+                        <i class="icon-heart" aria-hidden="true"></i> by
+                        <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: red;">
+                <div class=" container-fluid ">
+                    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                        <i class="fa fa-bars"></i>
+                        <span class="sr-only">Toggle Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mx-auto"> <!-- Center the text -->
+                            <h1 style="color: white; font-weight: bold; letter-spacing: 3px;">VENDZONE</h1>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="p-4 p-md-5">
+                <h2 id="judul">
+                    Contact Us For Detail
+                </h2>
+
+                <div id="formContainer">
+                    <form onsubmit="return validateForm()">
+                        <div class="formInput">
+                            <input id="name" class="inputForm" type="text" placeholder="*Name">
+                            <input id="email" class="inputForm" type="text" placeholder="*Email">
+                        </div>
+                        <div class="formInput">
+                            <select name="listVendzone" class="inputForm">
+                                <option value="">* Pre-order Your Vendzone</option>
+                                <option value="1">Vending 1</option>
+                                <option value="2">Vending 2</option>
+                                <option value="3">Vending 3</option>
+                                <option value="4">Vending 4</option>
+                            </select>
+                            <input id="phone" class="inputForm" type="text" placeholder="*Phone / Whatsapp">
+                        </div>
+                        <div class="formInput">
+                            <textarea style="width: 100%;" name="massageForm" class="textareaForm" placeholder="*Message Content"></textarea>
+                        </div>
+
+                        <div id="btn_submit">
+                            <button id="submitButton" style="margin-top: 20px; display: inline-block; width: 200px; background-color: orange; color: white; height: 50px; border-radius: 10px; border: 1px solid rgb(86, 86, 86);" type="submit">get my vendzone</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/popper.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/main.js"></script>
+            <script>
+                function validateForm() {
+                    var name = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var phone = document.getElementById("phone").value;
+
+                    var nameRegex = /^[A-Za-z\s]+$/;
+                    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    var phoneRegex = /^\d+$/;
+
+                    if (!nameRegex.test(name)) {
+                        alert("Name should not contain numbers.");
+                        return false;
+                    }
+
+                    if (!emailRegex.test(email)) {
+                        alert("Please enter a valid email address.");
+                        return false;
+                    }
+
+                    if (!phoneRegex.test(phone)) {
+                        alert("Phone number should contain only digits.");
+                        return false;
+                    }
+
+                    return true;
+                }
+            </script>
+</body>
+
+</html>
