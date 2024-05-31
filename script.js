@@ -1,3 +1,40 @@
+const fetchdata = async()=>{
+  const response = await fetch("x1364.json")
+  return response.json()
+}
+let zales;
+fetchdata().then((res)=>{
+  zales = res
+  let month = zales.transactionPerMonth.map((datum)=>{
+    return datum.MonthName
+  })
+
+  let value = zales.transactionPerMonth.map((datum)=>{
+    return datum.TransactionCount
+  })
+
+  const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: month,
+    datasets: [{
+      label: 'LineTotal',
+      data: value,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+})
+
 'use strict';
 
 /*navbar*/
@@ -40,5 +77,4 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
-
 
