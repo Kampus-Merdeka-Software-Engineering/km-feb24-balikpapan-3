@@ -1,28 +1,33 @@
-const fetchdata = async()=>{
-  const response = await fetch("x1364.json")
+const fetchdata = async(url)=>{
+  const response = await fetch(url)
   return response.json()
 }
+let zalestransaction;
+let atttransaction;
+let machine;
 let zales;
-fetchdata().then((res)=>{
+let linechart;
+fetchdata("x1364.json").then((res)=>{
   zales = res
   let month = zales.transactionPerMonth.map((datum)=>{
     return datum.MonthName
   })
 
-  let value = zales.transactionPerMonth.map((datum)=>{
+  zalestransaction = zales.transactionPerMonth.map((datum)=>{
     return datum.TransactionCount
   })
 
   const ctx = document.getElementById('myChart');
 
-new Chart(ctx, {
+linechart = new Chart(ctx, {
   type: 'line',
   data: {
     labels: month,
     datasets: [{
       label: 'LineTotal',
-      data: value,
-      borderWidth: 1
+      data: zalestransaction,
+      borderWidth: 1,
+      backgroundColor	: 'blue'
     }]
   },
   options: {
@@ -33,7 +38,39 @@ new Chart(ctx, {
     }
   }
 });
+
+console.log(zales.transactionByCategory)
+new gridjs.Grid({
+  data: zales.transactionPerMonth,
+  pagination: true,
+  sort : true,
+  search : true,
+}).render(document.getElementById("wrapper"));
+
 })
+
+fetchdata("x1366.json").then((res)=>{
+  att = res
+  let month = att.transactionPerMonth.map((datum)=>{
+    return datum.MonthName
+  })
+
+  atttransaction = att.transactionPerMonth.map((datum)=>{
+    return datum.TransactionCount
+  })
+})
+
+let selectElement = document.getElementsByClassName('machine-filter');
+console.log(selectElement[0].value)
+
+const handleFilterChange = () => {
+  machine = selectElement[0].value
+  linechart.data.datasets[0].data = machine === "BSQ Mall x1364 - Zales"? zalestransaction : machine === "BSQ Mall x1366 - ATT"? atttransaction : [1,2,3,4,5,6,7,8,9,10,11,12]
+  linechart.update()
+}
+selectElement[0].addEventListener('change',handleFilterChange)
+
+
 
 'use strict';
 
@@ -77,4 +114,6 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+
 
