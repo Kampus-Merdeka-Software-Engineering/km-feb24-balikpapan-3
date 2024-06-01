@@ -4,6 +4,9 @@ const fetchdata = async(url)=>{
 }
 let zalestransaction;
 let atttransaction;
+let guttentransaction;
+let earltransaction;
+let librarytransaction;
 let machine;
 let zales;
 let linechart;
@@ -60,12 +63,45 @@ fetchdata("x1366.json").then((res)=>{
   })
 })
 
+fetchdata("x1367.json").then((res)=>{
+  guttentransaction = res
+  let month = guttentransaction.transactionPerMonth.map((datum)=>{
+    return datum.MonthName
+  })
+
+  guttentransaction = guttentransaction.transactionPerMonth.map((datum)=>{
+    return datum.TransactionCount
+  })
+})
+
+fetchdata("x1371.json").then((res)=>{
+  earltransaction = res
+  let month = earltransaction.transactionPerMonth.map((datum)=>{
+    return datum.MonthName
+  })
+
+  earltransaction = earltransaction.transactionPerMonth.map((datum)=>{
+    return datum.TransactionCount
+  })
+})
+
+fetchdata("x1380.json").then((res)=>{
+  librarytransaction = res
+  let month = librarytransaction.transactionPerMonth.map((datum)=>{
+    return datum.MonthName
+  })
+
+  librarytransaction = librarytransaction.transactionPerMonth.map((datum)=>{
+    return datum.TransactionCount
+  })
+})
+
 let selectElement = document.getElementsByClassName('machine-filter');
 console.log(selectElement[0].value)
 
 const handleFilterChange = () => {
   machine = selectElement[0].value
-  linechart.data.datasets[0].data = machine === "BSQ Mall x1364 - Zales"? zalestransaction : machine === "BSQ Mall x1366 - ATT"? atttransaction : [1,2,3,4,5,6,7,8,9,10,11,12]
+  linechart.data.datasets[0].data = machine === "BSQ Mall x1364 - Zales"? zalestransaction : machine === "BSQ Mall x1366 - ATT"? atttransaction : machine === "GuttenPlans x1367"? guttentransaction : machine === "Earle Asphalt x1371"? earltransaction : machine === "EB Public Library x1380"? librarytransaction : [1,2,3,4,5,6,7,8,9,10,11,12]
   linechart.update()
 }
 selectElement[0].addEventListener('change',handleFilterChange)
