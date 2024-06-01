@@ -1,0 +1,60 @@
+{
+    "revenuePerMachine": [
+        {
+            "Machine": "BSQ Mall x1364 - Zales",
+            "Revenue": "1867.0"
+        },
+        {
+            "Machine": "BSQ Mall x1366 - ATT",
+            "Revenue": "1671.0"
+        },
+        {
+            "Machine": "EB Public Library x1380",
+            "Revenue": "7240.5"
+        },
+        {
+            "Machine": "Earle Asphalt x1371",
+            "Revenue": "1936.5"
+        },
+        {
+            "Machine": "GuttenPlans x1367",
+            "Revenue": "7796.5"
+        }
+    ],
+    "revenuePerLocation": [
+        {
+            "Location": "Brunswick Sq Mall",
+            "Revenue": "3538.0"
+        },
+        {
+            "Location": "EB Public Library",
+            "Revenue": "7240.5"
+        },
+        {
+            "Location": "Earle Asphalt",
+            "Revenue": "1936.5"
+        },
+        {
+            "Location": "GuttenPlans",
+            "Revenue": "7796.5"
+        }
+    ],
+    "revenuePerCategory": [
+        {
+            "Category": "Carbonated",
+            "Revenue": "5290.75"
+        },
+        {
+            "Category": "Food",
+            "Revenue": "10938.5"
+        },
+        {
+            "Category": "Non Carbonated",
+            "Revenue": "2938.75"
+        },
+        {
+            "Category": "Water",
+            "Revenue": "1343.5"
+        }
+    ]
+}

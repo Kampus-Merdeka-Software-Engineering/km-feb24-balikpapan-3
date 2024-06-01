@@ -1,0 +1,20 @@
+{
+    "mostSellingCategoryByLocation": [
+        {
+            "Category": "Carbonated",
+            "TotalProductsSold": "68"
+        },
+        {
+            "Category": "Food",
+            "TotalProductsSold": "906"
+        },
+        {
+            "Category": "Non Carbonated",
+            "TotalProductsSold": "38"
+        },
+        {
+            "Category": "Water",
+            "TotalProductsSold": "18"
+        }
+    ]
+}

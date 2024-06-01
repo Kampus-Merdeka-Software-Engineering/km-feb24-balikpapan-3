@@ -1,0 +1,29 @@
+{
+    "top5Product" : [
+        {
+            "Category": "Carbonated",
+            "Product": "Cola Cola - Zero Sugar",
+            "ProductSales": "661"
+        },
+        {
+            "Category": "Carbonated",
+            "Product": "Monster Energy Original",
+            "ProductSales": "516"
+        },
+        {
+            "Category": "Water",
+            "Product": "Poland Springs Water",
+            "ProductSales": "457"
+        },
+        {
+            "Category": "Carbonated",
+            "Product": "Coca Cola - Regular",
+            "ProductSales": "353"
+        },
+        {
+            "Category": "Carbonated",
+            "Product": "Sunkist Soda - Orange",
+            "ProductSales": "290"
+        }
+    ]
+}
