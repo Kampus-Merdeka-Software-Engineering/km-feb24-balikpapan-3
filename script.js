@@ -101,11 +101,53 @@ console.log(selectElement[0].value)
 
 const handleFilterChange = () => {
   machine = selectElement[0].value
-  linechart.data.datasets[0].data = machine === "BSQ Mall x1364 - Zales"? zalestransaction : machine === "BSQ Mall x1366 - ATT"? atttransaction : machine === "GuttenPlans x1367"? guttentransaction : machine === "Earle Asphalt x1371"? earltransaction : machine === "EB Public Library x1380"? librarytransaction : [1,2,3,4,5,6,7,8,9,10,11,12]
+  linechart.data.datasets[0].data = machine === "BSQ Mall x1364 - Zales"? 
+                  zalestransaction : machine === "BSQ Mall x1366 - ATT"? 
+                  atttransaction : machine === "GuttenPlans x1367"? 
+                  guttentransaction : machine === "Earle Asphalt x1371"? 
+                  earltransaction : machine === "EB Public Library x1380"? 
+                  librarytransaction : [1,2,3,4,5,6,7,8,9,10,11,12]
   linechart.update()
 }
 selectElement[0].addEventListener('change',handleFilterChange)
 
+
+
+let machinerevenue;
+let barchart;
+
+fetchdata("revenue.json").then((res) => {
+  revenue = res;
+  let machine = revenue.revenuePerMachine.map((datum) => {
+      return datum.Machine;
+  });
+
+  machinerevenue = revenue.revenuePerMachine.map((datum) => {
+      return datum.Revenue;
+  });
+
+  const ctx = document.getElementById('myyChart').getContext('2d');
+
+  barchart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+          labels: machine,
+          datasets: [{
+              label: 'TransTotal',
+              data: machinerevenue,
+              borderWidth: 1,
+              backgroundColor: 'purple'
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+});
 
 
 'use strict';
