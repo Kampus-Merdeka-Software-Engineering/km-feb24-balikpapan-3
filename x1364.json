@@ -488,5 +488,58 @@
             "Quantity": "6",
             "Sales": "15.0"
         }
+    ],
+    "salesPerMonth": [
+        [
+            {
+                "Month": "January",
+                "TotalSales": "116.75"
+            },
+            {
+                "Month": "February",
+                "TotalSales": "144.0"
+            },
+            {
+                "Month": "March",
+                "TotalSales": "191.5"
+            },
+            {
+                "Month": "April",
+                "TotalSales": "117.5"
+            },
+            {
+                "Month": "May",
+                "TotalSales": "205.25"
+            },
+            {
+                "Month": "June",
+                "TotalSales": "226.25"
+            },
+            {
+                "Month": "July",
+                "TotalSales": "270.25"
+            },
+            {
+                "Month": "August",
+                "TotalSales": "187.5"
+            },
+            {
+                "Month": "September",
+                "TotalSales": "79.0"
+            },
+            {
+                "Month": "October",
+                "TotalSales": "123.5"
+            },
+            {
+                "Month": "November",
+                "TotalSales": "91.25"
+            },
+            {
+                "Month": "December",
+                "TotalSales": "114.25"
+            }   
+            
+        ]
     ]
 }
