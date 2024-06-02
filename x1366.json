@@ -455,52 +455,52 @@
     ],
     "salesPerMonth": [
         {
-            "Month": "April",
-            "TotalSales": "143.25"
-        },
-        {
-            "Month": "August",
-            "TotalSales": "134.75"
-        },
-        {
-            "Month": "December",
-            "TotalSales": "131.75"
+            "Month": "January",
+            "TotalSales": "168.5"
         },
         {
             "Month": "February",
             "TotalSales": "157.0"
         },
         {
-            "Month": "January",
-            "TotalSales": "168.5"
-        },
-        {
-            "Month": "July",
-            "TotalSales": "150.5"
-        },
-        {
-            "Month": "June",
-            "TotalSales": "167.5"
-        },
-        {
             "Month": "March",
             "TotalSales": "97.75"
+        },
+        {
+            "Month": "April",
+            "TotalSales": "143.25"
         },
         {
             "Month": "May",
             "TotalSales": "148.75"
         },
         {
-            "Month": "November",
-            "TotalSales": "127.0"
+            "Month": "June",
+            "TotalSales": "167.5"
+        },
+        {
+            "Month": "July",
+            "TotalSales": "150.5"
+        },
+        {
+            "Month": "August",
+            "TotalSales": "134.75"
+        },
+        {
+            "Month": "September",
+            "TotalSales": "117.0"
         },
         {
             "Month": "October",
             "TotalSales": "127.25"
         },
         {
-            "Month": "September",
-            "TotalSales": "117.0"
+            "Month": "November",
+            "TotalSales": "127.0"
+        },
+        {
+            "Month": "December",
+            "TotalSales": "131.75"
         }
     ]
 }
