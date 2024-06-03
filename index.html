@@ -18,6 +18,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
     rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
 <body id="top">
@@ -29,13 +30,13 @@
       <div class="overlay" data-overlay></div>
 
       <figure class="about-banner">
-        <img loading="lazy" decoding="async" src="Vendzone logo.png" width="60" height="60" loading="lazy" alt="about banner">
+        <img loading="lazy" decoding="async" src="logoVend.png" width="60" height="60" loading="lazy" alt="about banner">
       </figure>
 
       <nav class="navbar" data-navbar>
 
         <div class="navbar-top">
-          <a href="#" class="logo">Agency</a>
+          <a href="#" class="logo">Vendzone</a>
 
           <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
             <ion-icon name="close-outline"></ion-icon>
@@ -57,11 +58,11 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#machine" class="navbar-link" data-navbar-link>Machine</a>
+            <a href="#machine" class="navbar-link" data-navbar-link>Products</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#contact" class="navbar-link" data-navbar-link>Contact Us</a>
+            <a href="#contact" class="navbar-link" data-navbar-link>Contact</a>
           </li>
           
           <li class="navbar-item">
@@ -72,10 +73,9 @@
 
       </nav>
 
-      <a href="#" class="btn">
+      <a href="#contact" class="btn">
         <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-
-        <span>Get the App</span>
+        <span>Get Yours Now!</span>
       </a>
 
       <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
@@ -84,9 +84,6 @@
 
     </div>
   </header>
-
-
-
 
       <section class="hero" id="home">
         <div class="container">
@@ -125,7 +122,7 @@
             <h2 class="h2 section-title underline">About Us</h2>
 
             <p class="about-text">
-              Vending machine is an innovative solution for vending machine
+              Vendzone is an innovative solution for vending machine
               management designed to maximize operational efficiency and increase 
              your business profitability.   its provides various product have been spread throught various regions
             </p>
@@ -158,7 +155,7 @@
     </li>
         </div>
       </section>
-<h2 class="h2 section-title underline">Check around and see our data here</h2>
+<h2 class="h2 section-title underline">Check Around and See Our Data Here</h2>
 <section class="section data" id="data">
     <div class="container">
 
@@ -194,7 +191,7 @@
       <section class="section machine" id="machine">
         <div class="container">
           
-          <h2 class="h2 section-title underline">MACHINE</h2>
+          <h2 class="h2 section-title underline">Related Products</h2>
 
           <ul class="service-list">
 
@@ -305,43 +302,43 @@
 
       <section class="contact us" id="contact">
         <div class="container">
-
           <h2 class="h2 section-title underline">Contact Us</h2>
     </article>
   </main>
 </h2>
-<div id="formContainer ">
-    <form action=" ">
-        <div class="formInput ">
-            <input class="inputForm " type="text " placeholder="*Name ">
-            <input class="inputForm " type="text " placeholder="*Email ">
-        </div>
-        <div class="formInput">
-            <select name="listVendzone" class="inputForm " id=" ">
-                <option value=" ">* Pre-order Your Vendzone</option>
-                <option value="1 ">GuttenPlans x1367</option>
-                <option value="2 ">EB Public Library x1380</option>
-                <option value="3 ">Earle Asphalt x1371</option>
-                <option value="4 ">BSQ Mall x1364-Zales</option>
-                <option value="4 ">BSQ Mall x1366-ATT</option>
-            </select>
-            <input class="inputForm " type="int " placeholder="*Phone / Whatsapp ">
-        </div>
-        
-        <div class="formInput ">
-            <textarea style="width: 100%; " name="massageForm " class="textareaForm " id=" " placeholder="*Massage Content "></textarea>
-        </div>
-
-        <div id="btn_submit" style="display: flex; justify-content: center;">
-          <button id="submitButton" style="margin-top: 0px; margin-bottom: 70px; 
-          width: 200px; background-color: rgb(89, 14, 143); color: white; 
-          height: 50px; border-radius: 10px; border: 1px solid rgb(86, 86, 86);" 
-          type="submit">Get my vendzone</button>
+<div id="formContainer">
+  <form action="">
+      <div class="formInput">
+          <input class="inputForm" type="text" id="nameInput" placeholder="*Name">
+          <span id="nameError" class="error"></span>
+          <input class="inputForm" type="text" id="emailInput" placeholder="*Email">
       </div>
-      
-      <p></p>
+      <div class="formInput">
+          <select name="listVendzone" class="inputForm" id="vendzoneInput">
+              <option value="">* Pre-order Your Vendzone</option>
+              <option value="1">GuttenPlans x1367</option>
+              <option value="2">EB Public Library x1380</option>
+              <option value="3">Earle Asphalt x1371</option>
+              <option value="4">BSQ Mall x1364-Zales</option>
+              <option value="5">BSQ Mall x1366-ATT</option>
+          </select>
+          <input class="inputForm" type="text" id="phoneInput" placeholder="*Phone / Whatsapp">
+      </div>
 
-    </form>
+      <div class="formInput">
+          <textarea style="width: 100%;" name="messageForm" class="textareaForm" id="messageInput" placeholder="*Message Content"></textarea>
+      </div>
+
+      <div id="btn_submit" style="display: flex; justify-content: center;">
+          <button id="submitButton" style="margin-top: 0px; margin-bottom: 70px;
+          width: 200px; background-color: rgb(89, 14, 143); color: white;
+          height: 50px; border-radius: 10px; border: 1px solid rgb(86, 86, 86);"
+          type="button" onclick="validateForm()">Get my vendzone</button>
+      </div>
+
+      <p></p>
+  </form>
+</div>
 
 <section class="section our" id="our">
   <div class="about-content">
@@ -500,10 +497,10 @@
       <div class="container">
         <div class="footer-brand">
 
-          <a href="#" class="logo">Agency</a>
+          <a href="#" class="logo">Vendzone</a>
 
           <p class="text">
-            XY as the world's OEM vending machine source factory, will provide you with a smart vending retail business solutions!.
+            Vendzone as the world's OEM vending machine source factory, will provide you with a smart vending retail business solutions!.
           </p>
 
           <ul class="social-list">
@@ -533,7 +530,7 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Our links</p>
+            <p class="footer-list-title">Quick Navigation</p>
           </li>
 
           <li>
@@ -541,83 +538,29 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">About</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Services</a>
+            <a href="#" class="footer-link">Data</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Team</a>
+            <a href="#" class="footer-link">Products</a>
           </li>
-
           <li>
-            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Contact</a>
           </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
           <li>
-            <p class="footer-list-title">Our Services</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Strategy & Research</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Web Development</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Web Solution</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Digital Marketing</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">App Design</a>
+            <a href="#" class="footer-link">Our Team</a>
           </li>
 
         </ul>
-
+ 
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Other links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">FAQ</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Portfolio</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Support</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Contact Us</p>
+            <p class="footer-list-title">Get In Touch</p>
           </li>
 
           <li class="footer-item">
@@ -627,8 +570,7 @@
             </div>
 
             <div>
-              <a href="tel:+2786214313" class="footer-item-link">+278-621-4313</a>
-              <a href="tel:+2786871365" class="footer-item-link">+278-687-1365</a>
+              <a href="tel:+2786214313" class="footer-item-link">+62-838-9863684678</a>
             </div>
 
           </li>
@@ -640,8 +582,7 @@
             </div>
 
             <div>
-              <a href="mailto:info@agency.com" class="footer-item-link">info@agency.com</a>
-              <a href="mailto:help@agency.com" class="footer-item-link">help@agency.com</a>
+              <a href="mailto:info@agency.com" class="footer-item-link">blkpn.team3.revou@gmail.com</a>
             </div>
 
           </li>
@@ -653,7 +594,7 @@
             </div>
 
             <address class="footer-item-link">
-              Amphitheatre, ParkwayMounta, United States of America
+              Central New Jersey
             </address>
 
           </li>

@@ -590,6 +590,9 @@
 /*-----------------------------------*\
     #CONTACT US
   \*-----------------------------------*/
+
+  
+
   .formInput {
     margin-top: 30px;
     display: flex;
@@ -624,9 +627,13 @@
     #FOOTER
   \*-----------------------------------*/
   
-  .footer { font-size: var(--fs-8); }
+  .footer {
+    font-size: var(--fs-8);
+  }
   
-  .footer a { color: inherit; }
+  .footer a {
+    color: inherit;
+  }
   
   .footer-top {
     background-image: url("../images/footer-bg.png"), var(--gradient-1);
@@ -634,18 +641,21 @@
     background-size: auto, 200%;
     background-position: center, center;
     color: var(--white);
+    padding: 40px 0;
   }
   
-  .footer-brand { margin-block-end: 30px; }
+  .footer-brand {
+    margin-bottom: 30px;
+  }
   
   .footer-brand .logo {
     font-weight: var(--fw-700);
-    margin-block-end: 15px;
+    margin-bottom: 15px;
   }
   
   .footer-brand .text {
     font-size: var(--fs-8);
-    margin-block-end: 20px;
+    margin-bottom: 20px;
   }
   
   .social-list {
@@ -663,30 +673,40 @@
     border-radius: 50%;
   }
   
-  .footer-top .social-link:is(:hover, :focus) {
+  .footer-top .social-link:hover,
+  .footer-top .social-link:focus {
     background-image: var(--gradient-2);
     color: var(--white);
   }
   
-  .footer-list:not(:last-child) { margin-block-end: 25px; }
+  .footer-list:not(:last-child) {
+    margin-bottom: 25px;
+  }
   
   .footer-list-title {
     font-family: var(--ff-source-sans-pro);
     font-size: var(--fs-5);
     font-weight: var(--fw-700);
-    margin-block-end: 15px;
+    margin-bottom: 15px;
   }
   
-  .footer-link { padding-block: 5px; }
+  .footer-link {
+    padding: 5px;
+  }
   
-  :is(.footer-link, .footer-item-link):not(address):is(:hover, :focus) { text-decoration: underline; }
+  .footer-link:hover,
+  .footer-link:focus,
+  .footer-item-link:hover,
+  .footer-item-link:focus {
+    text-decoration: underline;
+  }
   
   .footer-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding-block: 10px;
+    padding: 10px 0;
   }
   
   .footer-item-icon {
@@ -700,18 +720,15 @@
     padding: 20px;
     text-align: center;
     color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .copyright-link {
-    display: inline-block;
-    text-decoration: underline;
+  .footer-bottom .copyright-link:hover,
+  .footer-bottom .copyright-link:focus {
+    text-decoration: none;
   }
-  
-  .copyright-link:is(:hover, :focus) { text-decoration: none; }
-  
-  
-  
-  
   
   /*-----------------------------------*\
     #GO TO TOP
