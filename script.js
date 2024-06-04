@@ -113,6 +113,43 @@ const handleFilterChange = () => {
 };
 selectElement[0].addEventListener('change', handleFilterChange);
 
+// REVENUE PER MACHINE
+
+let machinerevenue;
+let barchart;
+
+fetchdata("revenue.json").then((res) => {
+  revenue = res;
+  let machine = revenue.revenuePerMachine.map((datum) => {
+    return datum.Machine;
+  });
+
+  machinerevenue = revenue.revenuePerMachine.map((datum) => {
+    return datum.Revenue;
+  });
+
+  const ctx = document.getElementById('myyChart').getContext('2d');
+
+  barchart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: machine,
+      datasets: [{
+        label: 'TransTotal',
+        data: machinerevenue,
+        borderWidth: 1,
+        backgroundColor: 'purple'
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+});
 
 // MOST SELLING CATEGORY PER MACHINE BY LOCATION
 
@@ -180,49 +217,6 @@ fetchdata("mall.json").then((res) => {
   });
   
 
-// REVENUE PER MACHINE
-
-let machinerevenue;
-
-fetchdata("revenue.json").then((res) => {
-  revenue = res;
-  let machine = revenue.revenuePerMachine.map((datum) => {
-    return datum.Machine;
-  });
-
-  machinerevenue = revenue.revenuePerMachine.map((datum) => {
-    return datum.Revenue;
-  });
-
-  const ctx = document.getElementById('myyChart').getContext('2d');
-
-  linechart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: machine,
-      datasets: [{
-        label: 'TransTotal',
-        data: machinerevenue,
-        borderWidth: 1,
-        backgroundColor: 'purple'
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
-  });
-});
-
-  // TOP 5 PRODUCT
-  
-
-  // TYPE OF PAYMENT
-
-
   'use strict';
 
   /*navbar*/
@@ -264,46 +258,4 @@ fetchdata("revenue.json").then((res) => {
       goTopBtn.classList.remove("active");
     }
   });
-});
-
-// Form Logic
-function showPopup() {
-  alert("Message successfully sent!");
-}
-
-function validateForm() {
-  var name = document.getElementById('nameInput').value;
-  var email = document.getElementById('emailInput').value;
-  var vendzone = document.getElementById('vendzoneInput').value;
-  var phone = document.getElementById('phoneInput').value;
-  var message = document.getElementById('messageInput').value;
-
-  var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
-  var phoneRegex = /^\d+$/; // Only digits
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
-
-  if (name === "" || email === "" || vendzone === "" || phone === "" || message === "") {
-      alert("Please fill in all required fields.");
-  } else if (!name.match(nameRegex)) {
-      alert("Please enter a valid name (letters only).");
-  } else if (!phone.match(phoneRegex)) {
-      alert("Please enter a valid phone number (digits only).");
-  } else if (!email.match(emailRegex)) {
-      alert("Please enter a valid email address.");
-  } else {
-      alert("Message successfully sent!");
-      // Tambahkan di sini kode untuk mengirim data formulir jika diinginkan
-  }
-}
-
-document.getElementById('nameInput').addEventListener('input', function() {
-  var name = document.getElementById('nameInput').value;
-  var nameError = document.getElementById('nameError');
-  var nameRegex = /^[A-Za-z\s]+$/;
-
-  if (!name.match(nameRegex)) {
-      nameError.textContent = "Must contain letters only.";
-  } else {
-      nameError.textContent = "";
-  }
 });
