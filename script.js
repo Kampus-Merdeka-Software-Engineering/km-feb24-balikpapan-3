@@ -17,13 +17,15 @@ let alltransactions = [];
 fetchdata("x1364.json").then((res) => {
   zales = res;
   alltransactions.push(...res.transactionByProduct);
-  let month = zales.transactionPerMonth.map((datum) => {
-    return datum.MonthName;
+  let month = zales.salesPerMonth.map((datum) => {
+    return datum.month;
   });
 
-  zalestransaction = zales.transactionPerMonth.map((datum) => {
-    return datum.TransactionCount;
+  zalestransaction = zales.salesPerMonth.map((datum) => {
+    return datum.totalSales;
   });
+
+  console.log(res)
 
   const ctx = document.getElementById("myChart");
 
@@ -54,24 +56,24 @@ fetchdata("x1364.json").then((res) => {
 
 fetchdata("x1366.json").then((res) => {
   att = res;
-  let month = att.transactionPerMonth.map((datum) => {
-    return datum.MonthName;
+  let month = att.salesPerMonth.map((datum) => {
+    return datum.month;
   });
 
-  atttransaction = att.transactionPerMonth.map((datum) => {
-    return datum.TransactionCount;
+  atttransaction = att.salesPerMonth.map((datum) => {
+    return datum.totalSales;
   });
   alltransactions.push(...res.transactionByProduct);
 });
 
 fetchdata("x1367.json").then((res) => {
   guttentransaction = res;
-  let month = guttentransaction.transactionPerMonth.map((datum) => {
-    return datum.MonthName;
+  let month = guttentransaction.salesPerMonth.map((datum) => {
+    return datum.month;
   });
 
-  guttentransaction = guttentransaction.transactionPerMonth.map((datum) => {
-    return datum.TransactionCount;
+  guttentransaction = guttentransaction.salesPerMonth.map((datum) => {
+    return datum.totalSales;
   });
 
   alltransactions.push(...res.transactionByProduct);
@@ -79,12 +81,12 @@ fetchdata("x1367.json").then((res) => {
 
 fetchdata("x1371.json").then((res) => {
   earltransaction = res;
-  let month = earltransaction.transactionPerMonth.map((datum) => {
-    return datum.MonthName;
+  let month = earltransaction.salesPerMonth.map((datum) => {
+    return datum.month;
   });
 
-  earltransaction = earltransaction.transactionPerMonth.map((datum) => {
-    return datum.TransactionCount;
+  earltransaction = earltransaction.salesPerMonth.map((datum) => {
+    return datum.totalSales;
   });
 
   alltransactions.push(...res.transactionByProduct);
@@ -92,13 +94,16 @@ fetchdata("x1371.json").then((res) => {
 
 fetchdata("x1380.json").then((res) => {
   librarytransaction = res;
-  let month = librarytransaction.transactionPerMonth.map((datum) => {
-    return datum.MonthName;
+
+  let month = librarytransaction.salesPerMonth.map((datum) => {
+    return datum.month;
   });
 
-  librarytransaction = librarytransaction.transactionPerMonth.map((datum) => {
-    return datum.TransactionCount;
+  librarytransaction = librarytransaction.salesPerMonth.map((datum) => {
+    return datum.totalSales;
   });
+
+
 
   alltransactions.push(...res.transactionByProduct);
 });
@@ -109,13 +114,17 @@ new gridjs.Grid({
   pagination: true,
   sort: true,
   search: true,
+  className: {
+    // td: 'my-td-class',
+    pagination: 'pagination'
+  }
 }).render(document.getElementById("wrapper"));
 
 let selectElementMachine = document.getElementsByClassName("machine-filter");
 
 const handleFilterChangeMachine = () => {
   machine = selectElementMachine[0].value;
-  console.log(machine);
+  
 
   linechart.data.datasets[0].data =
     machine === "BSQ Mall x1364 - Zales"
@@ -160,7 +169,7 @@ const mergedTransactionByProduct = [];
 
 // console.log(alltransactions, "alltransactions");
 
-console.log();
+
 
 // REVENUE PER MACHINE
 
@@ -231,12 +240,13 @@ fetchdata("mall.json").then((res) => {
 
   const ctx = document.getElementById("myyyChart");
 
+  
   barchart2 = new Chart(ctx, {
     type: "bar",
     data: {
       labels: category,
       datasets: [{
-        label: category,
+        label: "Total Produk",
         data: mallmostselling,
         borderWidth: 1,
         backgroundColor: [
@@ -269,11 +279,11 @@ fetchdata("gutten.json").then((res) => {
   });
 });
 let selectElementLocation = document.getElementsByClassName("location-filter");
-console.log(selectElementLocation[0].value);
+
 
 const handleFilterChangeLocation = () => {
   let location = selectElementLocation[0].value;
-  console.log(guttenmostselling);
+  
   barchart2.data.datasets[0].data =
     location === "Brunswick Sq Mall"
       ? mallmostselling
@@ -351,41 +361,17 @@ function validateForm() {
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
 
   if (name === "" || email === "" || vendzone === "" || phone === "" || message === "") {
-      Swal.fire({
-          title: "Input Tidak Sesuai",
-          text: "Input Tidak Boleh Kosong",
-          icon: "error"
-      });
   } else if (!name.match(nameRegex)) {
-      Swal.fire({
-          title: "Input Tidak Sesuai",
-          text: "Nama Harus Huruf",
-          icon: "error"
-      });
   } else if (!phone.match(phoneRegex)) {
-      Swal.fire({
-          title: "Input Tidak Sesuai",
-          text: "No HP harus angka",
-          icon: "error"
-      });
   } else if (!email.match(emailRegex)) {
-      Swal.fire({
-          title: "Input Tidak Sesuai",
-          text: "Email tidak valid",
-          icon: "error"
-      });
   } else {
-      Swal.fire({
-          title: "Sukses",
-          text: "Data Berhasil Dikirim",
-          icon: "success"
-      }).then(() => {
-          // Reset form input values setelah SweetAlert ditutup
-          nameInput.value = "";
-          emailInput.value = "";
-          vendzoneInput.value = "";
-          phoneInput.value = "";
-          messageInput.value = "";
-      });
   }
 }
+
+const btnElement = document.getElementById('submitButton');
+const handleSubmit = () => {
+  overlayElement = document.getElementsByClassName('over-lay')[0];
+  overlayElement.style.display = 'flex';
+  console.log(overlayElement);
+}
+btnElement.addEventListener('click', handleSubmit);

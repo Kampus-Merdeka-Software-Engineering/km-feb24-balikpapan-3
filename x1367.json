@@ -523,52 +523,52 @@
     ],
     "salesPerMonth": [
         {
-            "Month": "January",
-            "TotalSales": "492.5"
+            "month": "January",
+            "totalSales": "492.5"
         },
         {
-            "Month": "February",
-            "TotalSales": "554.0"
+            "month": "February",
+            "totalSales": "554.0"
         },
         {
-            "Month": "March",
-            "TotalSales": "599.0"
+            "month": "March",
+            "totalSales": "599.0"
         },
         {
-            "Month": "April",
-            "TotalSales": "734.5"
+            "month": "April",
+            "totalSales": "734.5"
         },
         {
-            "Month": "May",
-            "TotalSales": "635.0"
+            "month": "May",
+            "totalSales": "635.0"
         },
         {
-            "Month": "June",
-            "TotalSales": "657.5"
+            "month": "June",
+            "totalSales": "657.5"
         },
         {
-            "Month": "July",
-            "TotalSales": "1004.0"
+            "month": "July",
+            "totalSales": "1004.0"
         },
         {
-            "Month": "August",
-            "TotalSales": "906.5"
+            "month": "August",
+            "totalSales": "906.5"
         },
         {
-            "Month": "September",
-            "TotalSales": "656.5"
+            "month": "September",
+            "totalSales": "656.5"
         },
         {
-            "Month": "October",
-            "TotalSales": "550.5"
+            "month": "October",
+            "totalSales": "550.5"
         },
         {
-            "Month": "November",
-            "TotalSales": "571.0"
+            "month": "November",
+            "totalSales": "571.0"
         },
         {
-            "Month": "December",
-            "TotalSales": "435.5"
+            "month": "December",
+            "totalSales": "435.5"
         }
     ]
 }

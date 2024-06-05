@@ -1,62 +1,62 @@
 {
-    "transactionPerMonth": [
+    "transactionPermonth": [
         {
-            "MonthName": "March",
-            "TransactionCount": "128"
+            "monthName": "March",
+            "transactionCount": "128"
         },
         {
-            "MonthName": "April",
-            "TransactionCount": "321"
+            "monthName": "April",
+            "transactionCount": "321"
         },
         {
-            "MonthName": "May",
-            "TransactionCount": "329"
+            "monthName": "May",
+            "transactionCount": "329"
         },
         {
-            "MonthName": "June",
-            "TransactionCount": "368"
+            "monthName": "June",
+            "transactionCount": "368"
         },
         {
-            "MonthName": "July",
-            "TransactionCount": "368"
+            "monthName": "July",
+            "transactionCount": "368" 
         },
         {
-            "MonthName": "August",
-            "TransactionCount": "334"
+            "monthName": "August",
+            "transactionCount": "334"
         },
         {
-            "MonthName": "September",
-            "TransactionCount": "312"
+            "monthName": "September",
+            "transactionCount": "312"
         },
         {
-            "MonthName": "October",
-            "TransactionCount": "340"
+            "monthName": "October",
+            "transactionCount": "340"
         },
         {
-            "MonthName": "November",
-            "TransactionCount": "274"
+            "monthName": "November",
+            "transactionCount": "274"
         },
         {
-            "MonthName": "December",
-            "TransactionCount": "282"
+            "monthName": "December",
+            "transactionCount": "282"
         }
     ],
     "transactionByCategory": [
         {
             "Category": "Carbonated",
-            "TransactionCount": "488"
+            "transactionCount": "488"
         },
         {
             "Category": "Food",
-            "TransactionCount": "1887"
+            "transactionCount": "1887"
         },
         {
             "Category": "Non Carbonated",
-            "TransactionCount": "392"
+            "transactionCount": "392"
         },
         {
             "Category": "Water",
-            "TransactionCount": "289"
+            "transactionCount": "289"
         }
     ],
     "transactionByProduct": [
@@ -651,44 +651,52 @@
     ],
     "salesPerMonth": [
         {
-            "Month": "March",
-            "TotalSales": "250.0"
+            "month": "January",
+            "totalSales": "0.0"
         },
         {
-            "Month": "April",
-            "TotalSales": "664.5"
+            "month": "February",
+            "totalSales": "0.0"
         },
         {
-            "Month": "May",
-            "TotalSales": "705.25"
+            "month": "March",
+            "totalSales": "250.0"
         },
         {
-            "Month": "June",
-            "TotalSales": "783.5"
+            "month": "April",
+            "totalSales": "664.5"
         },
         {
-            "Month": "July",
-            "TotalSales": "800.75"
+            "month": "May",
+            "totalSales": "705.25"
         },
         {
-            "Month": "August",
-            "TotalSales": "867.0"
+            "month": "June",
+            "totalSales": "783.5"
         },
         {
-            "Month": "September",
-            "TotalSales": "873.75"
+            "month": "July",
+            "totalSales": "800.75"
         },
         {
-            "Month": "October",
-            "TotalSales": "888.25"
+            "month": "August",
+            "totalSales": "867.0"
         },
         {
-            "Month": "November",
-            "TotalSales": "702.0"
+            "month": "September",
+            "totalSales": "873.75"
         },
         {
-            "Month": "December",
-            "TotalSales": "705.5"
+            "month": "October",
+            "totalSales": "888.25"
+        },
+        {
+            "month": "November",
+            "totalSales": "702.0"
+        },
+        {
+            "month": "December",
+            "totalSales": "705.5"
         }
     ]
 }

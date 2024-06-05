@@ -1,51 +1,51 @@
 {
-    "transactionPerMonth": [
+    "transactionPermonth": [
         {
-            "MonthName": "January",
+            "monthName": "January",
             "TransactionCount": "54"
         },
         {
-            "MonthName": "February",
+            "monthName": "February",
             "TransactionCount": "71"
         },
         {
-            "MonthName": "March",
+            "monthName": "March",
             "TransactionCount": "93"
         },
         {
-            "MonthName": "April",
+            "monthName": "April",
             "TransactionCount": "63"
         },
         {
-            "MonthName": "May",
+            "monthName": "May",
             "TransactionCount": "106"
         },
         {
-            "MonthName": "June",
+            "monthName": "June",
             "TransactionCount": "122"
         },
         {
-            "MonthName": "July",
+            "monthName": "July",
             "TransactionCount": "119"
         },
         {
-            "MonthName": "August",
+            "monthName": "August",
             "TransactionCount": "86"
         },
         {
-            "MonthName": "September",
+            "monthName": "September",
             "TransactionCount": "43"
         },
         {
-            "MonthName": "October",
+            "monthName": "October",
             "TransactionCount": "61"
         },
         {
-            "MonthName": "November",
+            "monthName": "November",
             "TransactionCount": "49"
         },
         {
-            "MonthName": "December",
+            "monthName": "December",
             "TransactionCount": "59"
         }
     ],
@@ -490,56 +490,53 @@
         }
     ],
     "salesPerMonth": [
-        [
-            {
-                "Month": "January",
-                "TotalSales": "116.75"
-            },
-            {
-                "Month": "February",
-                "TotalSales": "144.0"
-            },
-            {
-                "Month": "March",
-                "TotalSales": "191.5"
-            },
-            {
-                "Month": "April",
-                "TotalSales": "117.5"
-            },
-            {
-                "Month": "May",
-                "TotalSales": "205.25"
-            },
-            {
-                "Month": "June",
-                "TotalSales": "226.25"
-            },
-            {
-                "Month": "July",
-                "TotalSales": "270.25"
-            },
-            {
-                "Month": "August",
-                "TotalSales": "187.5"
-            },
-            {
-                "Month": "September",
-                "TotalSales": "79.0"
-            },
-            {
-                "Month": "October",
-                "TotalSales": "123.5"
-            },
-            {
-                "Month": "November",
-                "TotalSales": "91.25"
-            },
-            {
-                "Month": "December",
-                "TotalSales": "114.25"
-            }   
-            
-        ]
+        {
+            "month": "January",
+            "totalSales": "116.75"
+        },
+        {
+            "month": "February",
+            "totalSales": "144.0"
+        },
+        {
+            "month": "March",
+            "totalSales": "191.5"
+        },
+        {
+            "month": "April",
+            "totalSales": "117.5"
+        },
+        {
+            "month": "May",
+            "totalSales": "205.25"
+        },
+        {
+            "month": "June",
+            "totalSales": "226.25"
+        },
+        {
+            "month": "July",
+            "totalSales": "270.25"
+        },
+        {
+            "month": "August",
+            "totalSales": "187.5"
+        },
+        {
+            "month": "September",
+            "totalSales": "79.0"
+        },
+        {
+            "month": "October",
+            "totalSales": "123.5"
+        },
+        {
+            "month": "November",
+            "totalSales": "91.25"
+        },
+        {
+            "month": "December",
+            "totalSales": "114.25"
+        }  
     ]
 }
