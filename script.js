@@ -33,10 +33,12 @@ fetchdata("x1364.json").then((res) => {
       labels: month,
       datasets: [
         {
-          label: "LineTotal",
+          label: "Trans Total",
           data: zalestransaction,
+          // backgroundColor: "blue",
           borderWidth: 1,
-          backgroundColor: "blue",
+          backgroundColor: "rgba(54, 162, 235, 0.2)",
+          borderColor: "rgba(54, 162, 235, 1)",
         },
       ],
     },
@@ -187,7 +189,11 @@ fetchdata("revenue.json").then((res) => {
           data: machinerevenue,
           borderWidth: 1,
           backgroundColor: "purple",
+          borderWidth: 1,
+          backgroundColor: "rgba(54, 162, 235, 0.2)",
+          borderColor: "rgba(54, 162, 235, 1)",
         },
+      
       ],
     },
     options: {
@@ -203,11 +209,14 @@ fetchdata("revenue.json").then((res) => {
 // MOST SELLING CATEGORY PER MACHINE BY LOCATION
 
 let mall;
+let gutten;
 let mallmostselling;
 let earlmostselling;
 let guttenmostselling;
 let librarymostselling;
 let category;
+
+let barchart2;
 
 fetchdata("mall.json").then((res) => {
   mall = res;
@@ -219,50 +228,25 @@ fetchdata("mall.json").then((res) => {
     return datum.TotalProductsSold;
   });
 
+
   const ctx = document.getElementById("myyyChart");
 
-  barchart = new Chart(ctx, {
+  barchart2 = new Chart(ctx, {
     type: "bar",
     data: {
       labels: category,
-      datasets: [
-        {
-          label: "Food",
-          data: mallmostselling.map((value, index) =>
-            category[index] === "Food" ? value : 0
-          ),
-          borderWidth: 1,
-          backgroundColor: "rgba(255, 99, 132, 0.2)",
-          borderColor: "rgba(255, 99, 132, 1)",
-        },
-        {
-          label: "Carbonated",
-          data: mallmostselling.map((value, index) =>
-            category[index] === "Carbonated" ? value : 0
-          ),
-          borderWidth: 1,
-          backgroundColor: "rgba(54, 162, 235, 0.2)",
-          borderColor: "rgba(54, 162, 235, 1)",
-        },
-        {
-          label: "Non Carbonated",
-          data: mallmostselling.map((value, index) =>
-            category[index] === "Non Carbonated" ? value : 0
-          ),
-          borderWidth: 1,
-          backgroundColor: "rgba(75, 192, 192, 0.2)",
-          borderColor: "rgba(75, 192, 192, 1)",
-        },
-        {
-          label: "Water",
-          data: mallmostselling.map((value, index) =>
-            category[index] === "Water" ? value : 0
-          ),
-          borderWidth: 1,
-          backgroundColor: "rgba(153, 102, 255, 0.2)",
-          borderColor: "rgba(153, 102, 255, 1)",
-        },
-      ],
+      datasets: [{
+        label: category,
+        data: mallmostselling,
+        borderWidth: 1,
+        backgroundColor: [
+          "rgb(94, 22, 117)",
+          "rgb(238, 66, 102)",
+          "rgb(255, 210, 63)",
+          "rgb(51, 115, 87)",
+        ],
+        borderColor: "rgba(255, 99, 132, 1)",
+      }] ,
     },
     options: {
       scales: {
@@ -274,13 +258,23 @@ fetchdata("mall.json").then((res) => {
   });
 });
 
-let selectElementLocation = document.querySelector("#location-filter");
-console.log(selectElementLocation.value);
+fetchdata("gutten.json").then((res) => {
+  gutten = res;
+  let category = gutten.mostSellingCategoryByLocation.map((datum) => {
+    return datum.Category;
+  });
+
+  guttenmostselling = gutten.mostSellingCategoryByLocation.map((datum) => {
+    return datum.TotalProductsSold;
+  });
+});
+let selectElementLocation = document.getElementsByClassName("location-filter");
+console.log(selectElementLocation[0].value);
 
 const handleFilterChangeLocation = () => {
-  location = selectElementLocation[0].value;
-  console.log(location);
-  barchart.data.datasets[0].data =
+  let location = selectElementLocation[0].value;
+  console.log(guttenmostselling);
+  barchart2.data.datasets[0].data =
     location === "Brunswick Sq Mall"
       ? mallmostselling
       : location === "Earle Asphalt"
@@ -290,7 +284,7 @@ const handleFilterChangeLocation = () => {
       : location === "GuttenPlans"
       ? guttenmostselling
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-  barchart.update();
+  barchart2.update();
 };
 
 selectElementLocation[0].addEventListener("change", handleFilterChangeLocation);
@@ -336,3 +330,62 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+
+//validate form
+function validateForm() {
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var vendzoneInput = document.getElementById('vendzoneInput');
+  var phoneInput = document.getElementById('phoneInput');
+  var messageInput = document.getElementById('messageInput');
+
+  var name = nameInput.value;
+  var email = emailInput.value;
+  var vendzone = vendzoneInput.value;
+  var phone = phoneInput.value;
+  var message = messageInput.value;
+
+  var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
+  var phoneRegex = /^\d+$/; // Only digits
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
+
+  if (name === "" || email === "" || vendzone === "" || phone === "" || message === "") {
+      Swal.fire({
+          title: "Input Tidak Sesuai",
+          text: "Input Tidak Boleh Kosong",
+          icon: "error"
+      });
+  } else if (!name.match(nameRegex)) {
+      Swal.fire({
+          title: "Input Tidak Sesuai",
+          text: "Nama Harus Huruf",
+          icon: "error"
+      });
+  } else if (!phone.match(phoneRegex)) {
+      Swal.fire({
+          title: "Input Tidak Sesuai",
+          text: "No HP harus angka",
+          icon: "error"
+      });
+  } else if (!email.match(emailRegex)) {
+      Swal.fire({
+          title: "Input Tidak Sesuai",
+          text: "Email tidak valid",
+          icon: "error"
+      });
+  } else {
+      Swal.fire({
+          title: "Sukses",
+          text: "Data Berhasil Dikirim",
+          icon: "success"
+      }).then(() => {
+          // Reset form input values setelah SweetAlert ditutup
+          nameInput.value = "";
+          emailInput.value = "";
+          vendzoneInput.value = "";
+          phoneInput.value = "";
+          messageInput.value = "";
+      });
+  }
+}
