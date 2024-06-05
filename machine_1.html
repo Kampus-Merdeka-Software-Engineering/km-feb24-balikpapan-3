@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Dashboard</title>
+    <style>
+        body {
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .left-panel, .right-panel {
+            padding: 20px;
+        }
+        .left-panel {
+            width: 30%;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ddd;
+        }
+        .right-panel {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .chart-container {
+            width: 80%;
+            margin-top: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="left-panel">
+    <h2>Insights:</h2>
+    <ul>
+        <li>Pada machine ini, dari keempat kategori yang ditawarkan, produknya selalu ada yang diminati oleh pelanggan. Dilihat dari jumlah pembelian, dari kategori karbonat pelanggan lebih menyukai produk Coca Cola - Zero Sugar, Monster Energy Original, dan Spindrift - Sparkling Water - Lime. Pada kategori makanan, konsumen lebih banyak membeli produk SunChips Multigrain - Original, KitKat - Crisp Wafers, dan Cheezlt - Original. Sedangkan produk dari kategori nonkarbonat yang diminati oleh konsumen adalah Snapple Diet Tea - Peach Tea, Iberia Coconut Water, dan Snapple Tea - Lemon. Untuk kategori air, produk Poland Springs Water, BodyArmor LYTE - Peach Mango, dan Vitamin Water - Squeezed Lemonade menjadi yang paling banyak diminati oleh konsumen.</li>
+        <li>BSQ Mall x1364 - Zales
+            Jumlah dari hasil transaksi selama 12 bulan pada mesin BSQ Mall x1364 - Zales adalah 1731.75</li>
+        <li>Machine BSQ Mall x 1364-zales
+            Jenis pembayaran yang paling banyak digunakan adalah Cash dengan jumlah 571 
+            Jenis pembayaran Credit berada di urutan kedua dengan jumlah 326 
+            </li>
+        </ul>
+    
+        <h2>Recommendations:</h2>
+        <ul>
+            <li>Menghilangkan produk yang berada di bawah top 5 penjualan dari masing-masing mesin, karena ketimpangan jumlah penjualan produk yang tidak merata, ada yang hanya terjual 1x dan ada pula yang hanya terjual 2x dalam 12 bulan penjualan.</li>
+            <li>Mempertahankan produk dengan penjualan top 3 teratas dari masing-masing mesin.</li>
+            <li>Menghentikan operasi mesin BSQ Mall x1366 - ATT dan memfokuskan penjualan di mesin BSQ Mall x1364 - Zales.</li>
+            <li>Menambahkan mesin GuttenPlans x1367 yang berada di lokasi GuttenPlans.</li>
+            <li>Menambahkan pembayaran lain seperti debit atau Qris untuk metode pembelian, karena mengikuti perkembangan zaman dan pembayaran yang lebih mudah dan bervariasi.
+            </li>
+        </ul>
+    </div>
+    
+    <div class="right-panel">
+        <div class="chart-container">
+            <canvas id="chart1"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="chart2"></canvas>
+        </div>
+    </div>
+    
+    <script>
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        const chart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['BSQ Mall x1364 - Zales', 'BSQ Mall x1366 - ATT', 'Earle Asphalt x1371', 'EB Public Library x1380', 'GuttenPlans x1367'],
+                datasets: [{
+                    label: 'Total Revenue for Each Machine',
+                    data: [1731.75, 1538.25, 1808.75, 6347.75, 6904.25],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        const chart2 = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: ['BSQ Mall x1364 - Zales', 'BSQ Mall x1366 - ATT', 'Earle Asphalt x1371', 'EB Public Library x1380', 'GuttenPlans x1367'],
+                datasets: [
+                    {
+                        label: 'Cash',
+                        data: [571, 438, 689, 1583, 2827],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    },
+                    {
+                        label: 'Credit',
+                        data: [326, 282, 298, 1285, 583],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        borderWidth: 1
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    
+    </body>
+    </html>
+    
