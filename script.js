@@ -25,7 +25,6 @@ fetchdata("x1364.json").then((res) => {
     return datum.totalSales;
   });
 
-  console.log(res);
 
   const ctx = document.getElementById("myChart");
 
@@ -149,7 +148,7 @@ const mergedTransactionByProduct = [];
 //   atttransaction.transactionByProduct,
 // ];
 
-// console.log(dataObject);
+
 
 // for (const dataObject of dataObjects) {
 //   for (const product of dataObject.transactionByProduct) {
@@ -164,7 +163,7 @@ const mergedTransactionByProduct = [];
 
 // alltransactions = mergedTransactionByProduct;
 
-// console.log(alltransactions, "alltransactions");
+
 
 // REVENUE PER MACHINE
 
@@ -488,14 +487,12 @@ const handleSubmit = () => {
     document.getElementsByClassName("pop-up-message")[0];
 
     var name = nameInput.value;
-    console.log(nameInput);
     var email = emailInput.value;
     var vendzone = vendzoneInput.value;
     var phone = phoneInput.value;
     var message = messageInput.value;
 
     var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
-    console.log(name);
     var phoneRegex = /^\d+$/; // Only digits
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
 
