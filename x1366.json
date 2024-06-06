@@ -49,24 +49,6 @@
             "TransactionCount": "61"
         }
     ],
-    "transactionByCategory": [
-        {
-            "Category": "Carbonated",
-            "TransactionCount": "149"
-        },
-        {
-            "Category": "Food",
-            "TransactionCount": "342"
-        },
-        {
-            "Category": "Non Carbonated",
-            "TransactionCount": "116"
-        },
-        {
-            "Category": "Water",
-            "TransactionCount": "139"
-        }
-    ],
     "transactionByProduct": [
         {
             "product": "Autumns Granola Bar - Cinnamon Almond",

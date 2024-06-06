@@ -49,20 +49,6 @@
             "TransactionCount": "222"
         }
     ],
-    "transactionByCategory": [
-        {
-            "Category": "Carbonated",
-            "TransactionCount": "1526"
-        },
-        {
-            "Category": "Food",
-            "TransactionCount": "1721"
-        },
-        {
-            "Category": "Non Carbonated",
-            "TransactionCount": "351"
-        }
-    ],
     "transactionByProduct": [
         {
             "product": "Cheetos - Crunchy",

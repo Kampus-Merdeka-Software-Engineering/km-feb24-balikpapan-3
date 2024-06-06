@@ -49,24 +49,6 @@
             "TransactionCount": "59"
         }
     ],
-    "transactionByCategory": [
-        {
-            "Category": "Carbonated",
-            "TransactionCount": "146"
-        },
-        {
-            "Category": "Food",
-            "TransactionCount": "443"
-        },
-        {
-            "Category": "Non Carbonated",
-            "TransactionCount": "126"
-        },
-        {
-            "Category": "Water",
-            "TransactionCount": "211"
-        }
-    ],
     "transactionByProduct": [
         {
             "product": "Bai Antioxidant - Brasilia BB",

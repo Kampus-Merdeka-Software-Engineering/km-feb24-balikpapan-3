@@ -178,6 +178,10 @@ body {
   font-family: var(--ff-source-sans-pro);
 }
 
+.stroke {
+  -webkit-text-stroke: 5px var(--purple-navy);
+}
+
 .btn {
   background-image: var(--gradient-2);
   background-size: 200%;
@@ -383,7 +387,7 @@ body {
   background-image: url("../images/hero-bg-bottom.png"),
     url("../images/hero-bg.png"),
     var(--gradient-1);
-  background-repeat: no-repeat, no-repeat, no-repeat;
+  /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
   padding-block-start: 120px;
@@ -405,6 +409,9 @@ body {
   color: var(--white);
   font-size: var(--fs-1);
   margin-block-end: 20px;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 15px;
 }
 
 .hero-text {
@@ -491,6 +498,12 @@ body {
   .box.half {
     flex: 1 1 100%;
     /* Full width on small screens */
+  }
+
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 1px var(--purple-navy);
   }
 }
 
@@ -1280,48 +1293,60 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 .main-container {
-  background: #fff;
-  border-radius: 15px;
-  margin: 1rem;
-  padding: 20px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    background: #fff;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
 }
 
-h2 {
-  text-align: center;
+.main-container h2 {
+    text-align: center;
 }
 
-hr {
-  width: 10rem;
-  margin: 10px auto;
+.main-container hr {
+    width: 10rem;
+    margin: 10px auto;
 }
 
 .members {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team-member {
-  margin: 8px;
-  transition: all .3s ease;
-  cursor: pointer;
+    margin: 8px;
+    transition: all .3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-member:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-img {
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.team-member img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin: 20px;
 }
 
-h4,
-p {
-  text-align: center;
-  font-size: 12px;
-  margin: 7px;
+.slick-slide {
+  margin: 10px 16px;
+}
+
+.slick-list {
+  margin: 0 -16px;
 }

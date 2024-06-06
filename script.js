@@ -25,7 +25,7 @@ fetchdata("x1364.json").then((res) => {
     return datum.totalSales;
   });
 
-  console.log(res)
+  console.log(res);
 
   const ctx = document.getElementById("myChart");
 
@@ -103,8 +103,6 @@ fetchdata("x1380.json").then((res) => {
     return datum.totalSales;
   });
 
-
-
   alltransactions.push(...res.transactionByProduct);
 });
 
@@ -116,15 +114,14 @@ new gridjs.Grid({
   search: true,
   className: {
     // td: 'my-td-class',
-    pagination: 'pagination'
-  }
+    pagination: "pagination",
+  },
 }).render(document.getElementById("wrapper"));
 
 let selectElementMachine = document.getElementsByClassName("machine-filter");
 
 const handleFilterChangeMachine = () => {
   machine = selectElementMachine[0].value;
-  
 
   linechart.data.datasets[0].data =
     machine === "BSQ Mall x1364 - Zales"
@@ -169,8 +166,6 @@ const mergedTransactionByProduct = [];
 
 // console.log(alltransactions, "alltransactions");
 
-
-
 // REVENUE PER MACHINE
 
 let machinerevenue;
@@ -202,7 +197,6 @@ fetchdata("revenue.json").then((res) => {
           backgroundColor: "rgba(54, 162, 235, 0.2)",
           borderColor: "rgba(54, 162, 235, 1)",
         },
-      
       ],
     },
     options: {
@@ -219,6 +213,8 @@ fetchdata("revenue.json").then((res) => {
 
 let mall;
 let gutten;
+let earl;
+let library;
 let mallmostselling;
 let earlmostselling;
 let guttenmostselling;
@@ -237,26 +233,26 @@ fetchdata("mall.json").then((res) => {
     return datum.TotalProductsSold;
   });
 
-
   const ctx = document.getElementById("myyyChart");
 
-  
   barchart2 = new Chart(ctx, {
     type: "bar",
     data: {
       labels: category,
-      datasets: [{
-        label: "Total Produk",
-        data: mallmostselling,
-        borderWidth: 1,
-        backgroundColor: [
-          "rgb(94, 22, 117)",
-          "rgb(238, 66, 102)",
-          "rgb(255, 210, 63)",
-          "rgb(51, 115, 87)",
-        ],
-        borderColor: "rgba(255, 99, 132, 1)",
-      }] ,
+      datasets: [
+        {
+          label: "Total Produk",
+          data: mallmostselling,
+          borderWidth: 1,
+          backgroundColor: [
+            "rgb(94, 22, 117)",
+            "rgb(238, 66, 102)",
+            "rgb(255, 210, 63)",
+            "rgb(51, 115, 87)",
+          ],
+          borderColor: "rgba(255, 99, 132, 1)",
+        },
+      ],
     },
     options: {
       scales: {
@@ -278,12 +274,33 @@ fetchdata("gutten.json").then((res) => {
     return datum.TotalProductsSold;
   });
 });
-let selectElementLocation = document.getElementsByClassName("location-filter");
 
+fetchdata("earl.json").then((res) => {
+  earl = res;
+  let category = earl.mostSellingCategoryByLocation.map((datum) => {
+    return datum.Category;
+  });
+
+  earlmostselling = earl.mostSellingCategoryByLocation.map((datum) => {
+    return datum.TotalProductsSold;
+  });
+});
+
+fetchdata("library.json").then((res) => {
+  library = res;
+  let category = library.mostSellingCategoryByLocation.map((datum) => {
+    return datum.Category;
+  });
+
+  librarymostselling = library.mostSellingCategoryByLocation.map((datum) => {
+    return datum.TotalProductsSold;
+  });
+});
+let selectElementLocation = document.getElementsByClassName("location-filter");
 
 const handleFilterChangeLocation = () => {
   let location = selectElementLocation[0].value;
-  
+
   barchart2.data.datasets[0].data =
     location === "Brunswick Sq Mall"
       ? mallmostselling
@@ -327,7 +344,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
   });
 }
 
-/*header & go-top-btn activeketika scroll*/
+/*header & go-top-btn active ketika scroll*/
 const header = document.querySelector("[data-header]");
 const goTopBtn = document.querySelector("[data-go-top]");
 
@@ -341,14 +358,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 //validate form
 function validateForm() {
-  var nameInput = document.getElementById('nameInput');
-  var emailInput = document.getElementById('emailInput');
-  var vendzoneInput = document.getElementById('vendzoneInput');
-  var phoneInput = document.getElementById('phoneInput');
-  var messageInput = document.getElementById('messageInput');
+  var nameInput = document.getElementById("nameInput");
+  var emailInput = document.getElementById("emailInput");
+  var vendzoneInput = document.getElementById("vendzoneInput");
+  var phoneInput = document.getElementById("phoneInput");
+  var messageInput = document.getElementById("messageInput");
 
   var name = nameInput.value;
   var email = emailInput.value;
@@ -360,7 +376,13 @@ function validateForm() {
   var phoneRegex = /^\d+$/; // Only digits
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
 
-  if (name === "" || email === "" || vendzone === "" || phone === "" || message === "") {
+  if (
+    name === "" ||
+    email === "" ||
+    vendzone === "" ||
+    phone === "" ||
+    message === ""
+  ) {
   } else if (!name.match(nameRegex)) {
   } else if (!phone.match(phoneRegex)) {
   } else if (!email.match(emailRegex)) {
@@ -368,10 +390,63 @@ function validateForm() {
   }
 }
 
-const btnElement = document.getElementById('submitButton');
+
+const btnSubmit = document.getElementById("submitButton")
+const btnClose = document.getElementById("closeButton")
+
+
+btnSubmit.addEventListener("click",(e) => {
+  e.preventDefault();
+})  
+
+btnClose.addEventListener("click",(e) => {
+  e.preventDefault();
+})  
+
+
 const handleSubmit = () => {
-  overlayElement = document.getElementsByClassName('over-lay')[0];
-  overlayElement.style.display = 'flex';
-  console.log(overlayElement);
-}
-btnElement.addEventListener('click', handleSubmit);
+  overlayElement = document.getElementsByClassName("over-lay")[0];
+  overlayElement.style.display = "flex";
+};
+
+
+btnSubmit.addEventListener("click", handleSubmit);
+
+const handleClose = () => {
+  overlayElement = document.getElementsByClassName("over-lay")[0];
+  overlayElement.style.display = "none";
+};
+
+btnClose.addEventListener("click", handleClose);
+
+$(document).ready(function () {
+  $(".service-list").slick({
+    arrow: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow: false,
+    nextArrow: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 980, // tablet breakpoint
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600, // mobile breakpoint
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // mobile breakpoint
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+});

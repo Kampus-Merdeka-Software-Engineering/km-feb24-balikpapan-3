@@ -49,24 +49,6 @@
             "TransactionCount": "60"
         }
     ],
-    "transactionByCategory": [
-        {
-            "Category": "Carbonated",
-            "TransactionCount": "68"
-        },
-        {
-            "Category": "Food",
-            "TransactionCount": "900"
-        },
-        {
-            "Category": "Non Carbonated",
-            "TransactionCount": "38"
-        },
-        {
-            "Category": "Water",
-            "TransactionCount": "18"
-        }
-    ],
     "transactionByProduct": [
         {
             "product": "Belvita Breakfast Cookies - Blueberry",

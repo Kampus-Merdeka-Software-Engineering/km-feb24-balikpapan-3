@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
 
 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -24,13 +25,16 @@
   <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
 <style>
   .hero {
-    background-image: url(vend.gif);
-    background-size: 120vw 120vh;
+    background-image: url(homevend.gif);
+    background-size: cover;
     filter: contrast(150%);
   }
 
@@ -101,7 +105,7 @@
       <a href="#" class="btn">
         <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
 
-        <span>Get the App</span>
+        <span>Get Yours Now!</span>
       </a>
 
       <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
@@ -115,27 +119,27 @@
 
 
   <section class="hero" id="home">
-    <div class="container">
+    <!-- <div class="container"> -->
 
-      <div class="hero-content">
+      <h2 class="h2 hero-title stroke title">VENDZONE</h2>
+      <!-- <div class="hero-content">
 
-        <p class="hero-subtitle">Balikpapan - Team 3</p>
+        <p class="hero-subtitle stroke">Balikpapan - Team 3</p>
 
-        <h2 class="h2 hero-title">VENDZONE</h2>
 
-        <p class="hero-text">
+        <p class="hero-text stroke">
           #great selection of high quality Vending Machine
         </p>
 
 
 
-      </div>
-
+      </div> -->
+<!-- 
       <figure class="Home-page" style="margin-left: 100px">
-        <!-- <img loading="lazy" decoding="async" src="About_Us.png" width="400" height="250" loading="lazy" alt="hero-banner"> -->
-      </figure>
+        <img loading="lazy" decoding="async" src="About_Us.png" width="400" height="250" loading="lazy" alt="hero-banner">
+      </figure> -->
 
-    </div>
+    <!-- </div> -->
   </section>
 
 
@@ -176,9 +180,7 @@
         </ul>
 
       </div>
-      </li>
 
-      </li>
     </div>
   </section>
 
@@ -193,7 +195,7 @@
       <option value="EB Public Library x1380">EB Public Library x1380</option>
       <option value="GuttenPlans x1367">GuttenPlans x1367</option>
     </select>
-    <canvas id="myChart" style="width: 250; height:100;"></canvas></div>
+    <canvas id="myChart" style="width: 100%"></canvas></div>
 
     <div class="box"><select class="location-filter" id="location-filter">
       <option value="Brunswick Sq Mall">Brunswick Sq Mall</option>
@@ -201,9 +203,9 @@
       <option value="EB Public Library">EB Public Library</option>
       <option value="GuttenPlans">GuttenPlans</option>
     </select>
-    <canvas id="myyyChart" style="width: 250; height:100;"></canvas></div>
+    <canvas id="myyyChart" style="width: 100%"></canvas></div>
 
-    <div class="box"><canvas id="myyChart" style="width: 250; height:100;"></canvas></div>
+    <div class="box"><canvas id="myyChart" style="width: 100%"></canvas></div>
     <div class="box half"></div>
     <div class="box half"></div>
 </div>
@@ -343,9 +345,7 @@
     <div class="container">
 
       <h2 class="h2 section-title underline">Contact Us</h2>
-      </article>
-      </main>
-      </h2>
+
       <div id="formContainer ">
         <form action=" ">
           <div class="formInput ">
@@ -447,7 +447,6 @@
       </div>
     </div>
 <br> <br> <br> <br>
-</section>
 
         </form>
 
@@ -624,7 +623,6 @@
           </div>
         </section>
 
-  </section>
 
   <footer class="footer">
     <div class="footer-top section">
@@ -809,13 +807,16 @@
   </a>
 
 <div class="over-lay">
-  <div class="pop-up">Data Terkirim</div>
+  <div class="pop-up">Data Terkirim
+
+
+    <button id="closeButton">Tutup</button>
+  </div>
 </div>
   
   
 
   <script src="./script.js" defer data-deferred="1"></script>
   
-</body>
 
 </html>
