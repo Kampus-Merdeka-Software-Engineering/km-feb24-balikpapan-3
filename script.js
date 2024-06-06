@@ -318,26 +318,22 @@ selectElementLocation[0].addEventListener("change", handleFilterChangeLocation);
 
 ("use strict");
 // TOP 5 PRODUCT
-let productCategory;
-let productSalesChart;
 
-fetch("top5product.json")
-  .then((response) => response.json())
-  .then((data) => {
-    productCategory = data.category;
-    let productName = data.product;
-    let productSales = data.productSales;
+fetchdata("top5product.json")
+  .then((res) => {
 
+    let product = res.top5Product.map((datum) => datum.product);
+    let productSale = res.top5Product.map((datum) => datum.productSales);
     const ctx = document.getElementById("myyyyChart").getContext("2d");
 
     productSalesChart = new Chart(ctx, {
       type: "bar",
       data: {
-        labels: [productName],
+        labels: product,
         datasets: [
           {
-            label: productCategory,
-            data: [productSales],
+            label: 'product name',
+            data: productSale,
             borderWidth: 1,
             backgroundColor: "rgba(54, 162, 235, 0.2)",
             borderColor: "rgba(54, 162, 235, 1)",
@@ -394,16 +390,17 @@ fetch("payment.json")
         ],
       },
       options: {
-        scales: {
-          y: {
-            beginAtZero: true,
-            ticks: {
-              callback: function (value) {
-                return value + "%";
-              },
-            },
-          },
-        },
+        responsive: true, 
+        // scales: {
+        //   y: {
+        //     beginAtZero: true,
+        //     ticks: {
+        //       callback: function (value) {
+        //         return value + "%";
+        //       },
+        //     },
+        //   },
+        // },
       },
     });
   })

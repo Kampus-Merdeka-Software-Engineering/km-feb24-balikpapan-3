@@ -488,7 +488,16 @@ body {
 }
 
 .box.half {
+  display:flex;
+  justify-content: end;
   flex: 1 1 calc(50% - 20px);
+  max-height: 250px;
+  /* 2 columns */
+}
+
+.box.half:last-child {
+  justify-content: start;
+  max-height: 250px;
   /* 2 columns */
 }
 
