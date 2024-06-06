@@ -1163,6 +1163,11 @@ body {
     color: var(--color);
   }
 
+  .logofixbanget {
+    color: var(--color);
+  }
+
+
 
 
   /**
@@ -1297,7 +1302,7 @@ body {
     border-radius: 15px;
     margin: 1rem;
     padding: 20px;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7)
 }
 
 .main-container h2 {
