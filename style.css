@@ -1284,14 +1284,14 @@ body {
   border-radius: 15px;
   margin: 1rem;
   padding: 20px;
-  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
-h2 {
+.main-container h2 {
   text-align: center;
 }
 
-hr {
+.main-container hr {
   width: 10rem;
   margin: 10px auto;
 }
@@ -1312,14 +1312,14 @@ hr {
   transform: scale(1.1);
 }
 
-img {
+.team-member img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin: 20px;
 }
 
-h4,
+.team-member h4,
 p {
   text-align: center;
   font-size: 12px;
