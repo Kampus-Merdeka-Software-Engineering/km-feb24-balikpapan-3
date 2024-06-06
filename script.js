@@ -39,8 +39,8 @@ fetchdata("x1364.json").then((res) => {
           data: zalestransaction,
           // backgroundColor: "blue",
           borderWidth: 1,
-          backgroundColor: "rgba(54, 162, 235, 0.2)",
-          borderColor: "rgba(54, 162, 235, 1)",
+          backgroundColor: "rgb(0, 118, 255)",
+          borderColor: "rgb(255, 110, 96)",
         },
       ],
     },
@@ -194,8 +194,8 @@ fetchdata("revenue.json").then((res) => {
           borderWidth: 1,
           backgroundColor: "purple",
           borderWidth: 1,
-          backgroundColor: "rgba(54, 162, 235, 0.2)",
-          borderColor: "rgba(54, 162, 235, 1)",
+          backgroundColor: "rgb(255, 110, 96)",
+          borderColor: "rgba(165, 28, 39, 1)",
         },
       ],
     },
@@ -321,9 +321,9 @@ selectElementLocation[0].addEventListener("change", handleFilterChangeLocation);
 let productCategory;
 let productSalesChart;
 
-fetch('top5product.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("top5product.json")
+  .then((response) => response.json())
+  .then((data) => {
     productCategory = data.category;
     let productName = data.product;
     let productSales = data.productSales;
@@ -341,7 +341,7 @@ fetch('top5product.json')
             borderWidth: 1,
             backgroundColor: "rgba(54, 162, 235, 0.2)",
             borderColor: "rgba(54, 162, 235, 1)",
-          }
+          },
         ],
       },
       options: {
@@ -353,20 +353,21 @@ fetch('top5product.json')
       },
     });
   })
-  .catch(error => console.error('Error fetching the JSON file:', error));
-
+  .catch((error) => console.error("Error fetching the JSON file:", error));
 
 // TYPE OF PAYMENT
 let paymentTypes;
 let paymentChart;
 
-fetch('payment.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("payment.json")
+  .then((response) => response.json())
+  .then((data) => {
     paymentTypes = data.typeOfPayment;
-    
-    let paymentTypeLabels = paymentTypes.map(datum => datum.PaymentType);
-    let transactionPercentages = paymentTypes.map(datum => datum.TransactionPercentage);
+
+    let paymentTypeLabels = paymentTypes.map((datum) => datum.PaymentType);
+    let transactionPercentages = paymentTypes.map(
+      (datum) => datum.TransactionPercentage
+    );
 
     const ctx = document.getElementById("myyyyyChart").getContext("2d");
 
@@ -376,12 +377,20 @@ fetch('payment.json')
         labels: paymentTypeLabels,
         datasets: [
           {
-            label: 'Transaction Percentage',
+            label: "Transaction Percentage",
             data: transactionPercentages,
             borderWidth: 1,
-            backgroundColor: "rgba(54, 162, 235, 0.2)",
-            borderColor: "rgba(54, 162, 235, 1)",
-          }
+            backgroundColor: [
+              "rgb(255, 102, 102)", // Soft Red for Cash
+              "rgb(102, 178, 255)", // Soft Blue for Credit
+              "rgb(239, 31, 62)", // Default or other colors
+            ],
+            borderColor: [
+              "rgba(255, 102, 102, 1)", // Soft Red border for Cash
+              "rgba(102, 178, 255, 1)", // Soft Blue border for Credit
+              "rgba(54, 162, 235, 1)", // Default or other border colors
+            ],
+          },
         ],
       },
       options: {
@@ -389,16 +398,16 @@ fetch('payment.json')
           y: {
             beginAtZero: true,
             ticks: {
-              callback: function(value) {
+              callback: function (value) {
                 return value + "%";
-              }
-            }
+              },
+            },
           },
         },
       },
     });
   })
-  .catch(error => console.error('Error fetching the JSON file:', error));
+  .catch((error) => console.error("Error fetching the JSON file:", error));
 /*navbar*/
 
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
@@ -471,25 +480,21 @@ function validateForm() {
   }
 }
 
+const btnSubmit = document.getElementById("submitButton");
+const btnClose = document.getElementById("closeButton");
 
-const btnSubmit = document.getElementById("submitButton")
-const btnClose = document.getElementById("closeButton")
-
-
-btnSubmit.addEventListener("click",(e) => {
+btnSubmit.addEventListener("click", (e) => {
   e.preventDefault();
-})  
+});
 
-btnClose.addEventListener("click",(e) => {
+btnClose.addEventListener("click", (e) => {
   e.preventDefault();
-})  
-
+});
 
 const handleSubmit = () => {
   overlayElement = document.getElementsByClassName("over-lay")[0];
   overlayElement.style.display = "flex";
 };
-
 
 btnSubmit.addEventListener("click", handleSubmit);
 
