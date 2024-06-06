@@ -317,7 +317,88 @@ const handleFilterChangeLocation = () => {
 selectElementLocation[0].addEventListener("change", handleFilterChangeLocation);
 
 ("use strict");
+// TOP 5 PRODUCT
+let productCategory;
+let productSalesChart;
 
+fetch('top5product.json')
+  .then(response => response.json())
+  .then(data => {
+    productCategory = data.category;
+    let productName = data.product;
+    let productSales = data.productSales;
+
+    const ctx = document.getElementById("myyyyChart").getContext("2d");
+
+    productSalesChart = new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels: [productName],
+        datasets: [
+          {
+            label: productCategory,
+            data: [productSales],
+            borderWidth: 1,
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            borderColor: "rgba(54, 162, 235, 1)",
+          }
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  })
+  .catch(error => console.error('Error fetching the JSON file:', error));
+
+
+// TYPE OF PAYMENT
+let paymentTypes;
+let paymentChart;
+
+fetch('payment.json')
+  .then(response => response.json())
+  .then(data => {
+    paymentTypes = data.typeOfPayment;
+    
+    let paymentTypeLabels = paymentTypes.map(datum => datum.PaymentType);
+    let transactionPercentages = paymentTypes.map(datum => datum.TransactionPercentage);
+
+    const ctx = document.getElementById("myyyyyChart").getContext("2d");
+
+    paymentChart = new Chart(ctx, {
+      type: "pie",
+      data: {
+        labels: paymentTypeLabels,
+        datasets: [
+          {
+            label: 'Transaction Percentage',
+            data: transactionPercentages,
+            borderWidth: 1,
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            borderColor: "rgba(54, 162, 235, 1)",
+          }
+        ],
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return value + "%";
+              }
+            }
+          },
+        },
+      },
+    });
+  })
+  .catch(error => console.error('Error fetching the JSON file:', error));
 /*navbar*/
 
 const navOpenBtn = document.querySelector("[data-nav-open-btn]");
