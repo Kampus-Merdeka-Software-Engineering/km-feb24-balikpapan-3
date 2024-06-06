@@ -31,9 +31,8 @@
 
   <style>
     .hero {
-      background-image: url(coba.gif);
+      background-image: url(homevend.gif);
       background-size: cover;
-      filter: contrast(150%);
     }
   
     .hero-subtitle {
@@ -60,7 +59,7 @@
       <div class="overlay" data-overlay></div>
 
       <figure class="about-banner">
-        <img class="logofixbanget" loading="lazy" decoding="async" src="logofixbanget.png" width="100px" height="100px" loading="lazy"
+        <img class="logofixbanget" loading="lazy" decoding="async" src="logofix.png" width="100px" height="100px" loading="lazy"
           alt="about banner">
       </figure>
 
@@ -351,11 +350,11 @@
       <div id="formContainer ">
         <form action=" ">
           <div class="formInput ">
-            <input class="inputForm " type="text " placeholder="*Name ">
-            <input class="inputForm " type="text " placeholder="*Email ">
+            <input value="nama" id="nameInput" class="inputForm " type="text " placeholder="*Name ">
+            <input id="emailInput" class="inputForm " type="text " placeholder="*Email ">
           </div>
           <div class="formInput">
-            <select name="listVendzone" class="inputForm " id=" ">
+            <select id="vendzoneInput" name="listVendzone" class="inputForm " id=" ">
               <option value=" ">* Pre-order Your Vendzone</option>
               <option value="1 ">GuttenPlans x1367</option>
               <option value="2 ">EB Public Library x1380</option>
@@ -363,12 +362,12 @@
               <option value="4 ">BSQ Mall x1364-Zales</option>
               <option value="4 ">BSQ Mall x1366-ATT</option>
             </select>
-            <input class="inputForm " type="int " placeholder="*Phone / Whatsapp ">
+            <input id="phoneInput" class="inputForm " type="int " placeholder="*Phone / Whatsapp ">
           </div>
 
 
           <div class="formInput ">
-            <textarea style="width: 100%; " name="massageForm " class="textareaForm " id=" "
+            <textarea id="messageInput" style="width: 100%; " name="massageForm " class="textareaForm " id=" "
               placeholder="*Massage Content "></textarea>
           </div>
 
@@ -518,7 +517,7 @@
 
         </ul>
 
-        <ul class="footer-list">
+        <!-- <ul class="footer-list">
 
           <li>
             <p class="footer-list-title">Our Services</p>
@@ -544,9 +543,9 @@
             <a href="#" class="footer-link">App Design</a>
           </li>
 
-        </ul>
+        </ul> -->
 
-        <ul class="footer-list">
+        <!-- <ul class="footer-list">
 
           <li>
             <p class="footer-list-title">Other links</p>
@@ -572,7 +571,7 @@
             <a href="#" class="footer-link">Support</a>
           </li>
 
-        </ul>
+        </ul> -->
 
         <ul class="footer-list">
 
@@ -636,13 +635,16 @@
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
-<div class="over-lay">
-  <div class="pop-up">Data Terkirim
+  <div class="over-lay">
 
+    <div class="pop-up">
 
-    <button id="closeButton">Tutup</button>
+      <p class="pop-up-message">
+        Data Terkirim
+      </p>
+      <button id="closeButton">Tutup</button>
+    </div>
   </div>
-</div>
   
   
 

@@ -477,6 +477,48 @@ function validateForm() {
   }
 }
 
+const handleSubmit = () => {
+  
+    var nameInput = document.getElementById("nameInput");
+    var emailInput = document.getElementById("emailInput");
+    var vendzoneInput = document.getElementById("vendzoneInput");
+    var phoneInput = document.getElementById("phoneInput");
+    var messageInput = document.getElementById("messageInput");
+    var popupMessageElement =
+    document.getElementsByClassName("pop-up-message")[0];
+
+    var name = nameInput.value;
+    console.log(nameInput);
+    var email = emailInput.value;
+    var vendzone = vendzoneInput.value;
+    var phone = phoneInput.value;
+    var message = messageInput.value;
+
+    var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
+    console.log(name);
+    var phoneRegex = /^\d+$/; // Only digits
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
+
+    if (
+      name === "" ||
+      email === "" ||
+      vendzone === "" ||
+      phone === "" ||
+      message === ""
+    ) {
+      popupMessageElement.innerText = "Data tidak boleh kosong";
+    } else if (!name.match(nameRegex)) {
+      popupMessageElement.innerText = "Inputan nama salah";
+    } else if (!phone.match(phoneRegex)) {
+      popupMessageElement.innerText = "Inputan nomor telepon harus angka";
+    } else if (!email.match(emailRegex)) {
+      popupMessageElement.innerText = "Inputan email salah";
+    } else {
+      popupMessageElement.innerText = "Data berhasil terkirim!";
+    }
+    overlayElement = document.getElementsByClassName("over-lay")[0];
+    overlayElement.style.display = "flex";
+};
 const btnSubmit = document.getElementById("submitButton");
 const btnClose = document.getElementById("closeButton");
 
@@ -488,11 +530,6 @@ btnClose.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-const handleSubmit = () => {
-  overlayElement = document.getElementsByClassName("over-lay")[0];
-  overlayElement.style.display = "flex";
-};
-
 btnSubmit.addEventListener("click", handleSubmit);
 
 const handleClose = () => {
@@ -502,34 +539,3 @@ const handleClose = () => {
 
 btnClose.addEventListener("click", handleClose);
 
-$(document).ready(function () {
-  $(".service-list").slick({
-    arrow: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    prevArrow: false,
-    nextArrow: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 980, // tablet breakpoint
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 600, // mobile breakpoint
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480, // mobile breakpoint
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  });
-});
