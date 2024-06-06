@@ -14,7 +14,7 @@ let zales;
 let linechart;
 let alltransactions = [];
 
-fetchdata("x1364.json").then((res) => {
+fetchdata("./json/x1364.json").then((res) => {
   zales = res;
   alltransactions.push(...res.transactionByProduct);
   let month = zales.salesPerMonth.map((datum) => {
@@ -53,7 +53,7 @@ fetchdata("x1364.json").then((res) => {
   });
 });
 
-fetchdata("x1366.json").then((res) => {
+fetchdata("./json/x1366.json").then((res) => {
   att = res;
   let month = att.salesPerMonth.map((datum) => {
     return datum.month;
@@ -65,7 +65,7 @@ fetchdata("x1366.json").then((res) => {
   alltransactions.push(...res.transactionByProduct);
 });
 
-fetchdata("x1367.json").then((res) => {
+fetchdata("./json/x1367.json").then((res) => {
   guttentransaction = res;
   let month = guttentransaction.salesPerMonth.map((datum) => {
     return datum.month;
@@ -78,7 +78,7 @@ fetchdata("x1367.json").then((res) => {
   alltransactions.push(...res.transactionByProduct);
 });
 
-fetchdata("x1371.json").then((res) => {
+fetchdata("./json/x1371.json").then((res) => {
   earltransaction = res;
   let month = earltransaction.salesPerMonth.map((datum) => {
     return datum.month;
@@ -91,7 +91,7 @@ fetchdata("x1371.json").then((res) => {
   alltransactions.push(...res.transactionByProduct);
 });
 
-fetchdata("x1380.json").then((res) => {
+fetchdata("./json/x1380.json").then((res) => {
   librarytransaction = res;
 
   let month = librarytransaction.salesPerMonth.map((datum) => {
@@ -139,38 +139,11 @@ const handleFilterChangeMachine = () => {
 
 selectElementMachine[0].addEventListener("change", handleFilterChangeMachine);
 
-const mergedTransactionByProduct = [];
-
-// let dataObject = [
-//   zales.transactionByProduct,
-//   guttentransaction.transactionByProduct,
-//   earltransaction.transactionByProduct,
-//   atttransaction.transactionByProduct,
-// ];
-
-
-
-// for (const dataObject of dataObjects) {
-//   for (const product of dataObject.transactionByProduct) {
-//     if (!uniqueProducts.has(product.Product)) {
-//       uniqueProducts.add(product.Product);
-//       mergedTransactionByProduct.push(product);
-//     }
-//   }
-
-//   mergedSalesPerMonth.push(...dataObject.salesPerMonth);
-// }
-
-// alltransactions = mergedTransactionByProduct;
-
-
-
 // REVENUE PER MACHINE
-
 let machinerevenue;
 let barchart;
 
-fetchdata("revenue.json").then((res) => {
+fetchdata("./json/revenue.json").then((res) => {
   revenue = res;
   let machine = revenue.revenuePerMachine.map((datum) => {
     return datum.Machine;
@@ -222,7 +195,7 @@ let category;
 
 let barchart2;
 
-fetchdata("mall.json").then((res) => {
+fetchdata("./json/mall.json").then((res) => {
   mall = res;
   let category = mall.mostSellingCategoryByLocation.map((datum) => {
     return datum.Category;
@@ -263,7 +236,7 @@ fetchdata("mall.json").then((res) => {
   });
 });
 
-fetchdata("gutten.json").then((res) => {
+fetchdata("./json/gutten.json").then((res) => {
   gutten = res;
   let category = gutten.mostSellingCategoryByLocation.map((datum) => {
     return datum.Category;
@@ -274,7 +247,7 @@ fetchdata("gutten.json").then((res) => {
   });
 });
 
-fetchdata("earl.json").then((res) => {
+fetchdata("./json/earl.json").then((res) => {
   earl = res;
   let category = earl.mostSellingCategoryByLocation.map((datum) => {
     return datum.Category;
@@ -285,7 +258,7 @@ fetchdata("earl.json").then((res) => {
   });
 });
 
-fetchdata("library.json").then((res) => {
+fetchdata("./json/library.json").then((res) => {
   library = res;
   let category = library.mostSellingCategoryByLocation.map((datum) => {
     return datum.Category;
@@ -318,7 +291,7 @@ selectElementLocation[0].addEventListener("change", handleFilterChangeLocation);
 ("use strict");
 // TOP 5 PRODUCT
 
-fetchdata("top5product.json")
+fetchdata("./json/top5product.json")
   .then((res) => {
 
     let product = res.top5Product.map((datum) => datum.product);
@@ -354,10 +327,9 @@ fetchdata("top5product.json")
 let paymentTypes;
 let paymentChart;
 
-fetch("payment.json")
-  .then((response) => response.json())
-  .then((data) => {
-    paymentTypes = data.typeOfPayment;
+fetchdata("./json/payment.json")
+  .then((res) => {
+    paymentTypes = res.typeOfPayment;
 
     let paymentTypeLabels = paymentTypes.map((datum) => datum.PaymentType);
     let transactionPercentages = paymentTypes.map(
@@ -390,16 +362,6 @@ fetch("payment.json")
       },
       options: {
         responsive: true, 
-        // scales: {
-        //   y: {
-        //     beginAtZero: true,
-        //     ticks: {
-        //       callback: function (value) {
-        //         return value + "%";
-        //       },
-        //     },
-        //   },
-        // },
       },
     });
   })
