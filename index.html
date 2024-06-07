@@ -1,26 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer data-deferred="1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gridjs/dist/gridjs.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <style>
+    .hero {
+      background-image: url(./assets/home-vend.gif);
+      background-size: cover;
+    }
+  
+    .hero-subtitle {
+      color: white;
+      font-weight: bold;
+      text-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+    }
+  
+    .about-banner {
+      padding-top: 20px;
+    }
+  </style>
+
 </head>
-<body>
-    <div>
-        <h2>Welcome!</h2>
-        <h3>a Great Selection of High Quality Vanding Machines</h3>
-        <p>Vending Machine is a machine that provides various kinds of food and drinks for those interested, and our products have been spread throughout various regions.</p>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <figure class="about-banner">
+        <img class="logo-white" loading="lazy" decoding="async" src="./assets/logo-white.png" width="100px" height="100px"
+          alt="about banner">
+      </figure>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Vendzone</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#data" class="navbar-link" data-navbar-link>Data</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#machine" class="navbar-link" data-navbar-link>Machine</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#our" class="navbar-link" data-navbar-link>Our Team</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#contact" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Get Yours Now!</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <!-- <div class="container"> -->
+
+      <h2 class="h2 hero-title stroke title">VENDZONE</h2>
+      <!-- <div class="hero-content">
+
+        <p class="hero-subtitle stroke">Balikpapan - Team 3</p>
+
+
+        <p class="hero-text stroke">
+          #great selection of high quality Vending Machine
+        </p>
+
+
+
+      </div> -->
+<!-- 
+      <figure class="Home-page" style="margin-left: 100px">
+        <img loading="lazy" decoding="async" src="About_Us.png" width="400" height="250" loading="lazy" alt="hero-banner">
+      </figure> -->
+
+    <!-- </div> -->
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+
+      <figure class="about-banner" style="margin-left: 130px" ;>
+        <img loading="lazy" decoding="async" src="./assets/ayam.gif" width="300" height="160" alt="about banner">
+      </figure>
+
+      <div class="about-content">
+
+        <h2 class="h2 section-title underline">About Us</h2>
+
+        <p class="about-text">
+          Vending machine is an innovative solution for vending machine
+          management designed to maximize operational efficiency and increase
+          your business profitability. its provides various product have been spread throught various regions
+        </p>
+
+        <ul class="stats-list">
+
+          <li class="stats-card">
+            <p class="h3 stats-title">18,3RB</p>
+            <p class="stats-text">REVENUE</p>
+          </li>
+
+          <li class="stats-card">
+            <p class="h3 stats-title">20,5rb</p>
+            <p class="stats-text">TOTAL SALES</p>
+          </li>
+
+          <li class="stats-card">
+            <p class="h3 stats-title">9,5rb</p>
+            <p class="stats-text">Product Sold</p>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <h2 class="h2 section-title underline">Check around and see our data here</h2>
+  <div class="chart-container">
+    <div class="box"><select class="machine-filter" id="">
+      <option value="BSQ Mall x1364 - Zales">BSQ Mall x1364 - Zales</option>
+      <option value="BSQ Mall x1366 - ATT">BSQ Mall x1366 - ATT</option>
+      <option value="Earle Asphalt x1371">Earle Asphalt x1371</option>
+      <option value="EB Public Library x1380">EB Public Library x1380</option>
+      <option value="GuttenPlans x1367">GuttenPlans x1367</option>
+    </select>
+    <canvas id="myChart" style="width: 100%"></canvas></div>
+
+    <div class="box"><select class="location-filter" id="location-filter">
+      <option value="Brunswick Sq Mall">Brunswick Sq Mall</option>
+      <option value="Earle Asphalt">Earle Asphalt</option>
+      <option value="EB Public Library">EB Public Library</option>
+      <option value="GuttenPlans">GuttenPlans</option>
+    </select>
+    <canvas id="myyyChart" style="width: 100%"></canvas></div>
+
+    <div class="box"><canvas id="myyChart" style="width: 100%"></canvas></div>
+    <div class="box half"><canvas id="myyyyChart" style="width: 100%"></canvas></div>
+    <div class="box half"><canvas id="myyyyyChart" style="width: 100%"></canvas></div>
+</div>
+  <section class="section data" id="data">
+    <div class="container">
+
+      
+
+      
+      
+
+      
+      <div id="wrapper"></div>
+
+
+    </div>
+  </section>
+
+  <section class="section machine" id="machine">
+    <div class="container">
+
+      <h2 class="h2 section-title underline">MACHINE</h2>
+
+      <ul class="service-list">
+
+        <li>
+          <div class="service-card">
+
+            <figure class="about-banner"
+              style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img loading="lazy" decoding="async" src="./assets/our-machine.png" width="150" height="80" alt="about banner">
+            </figure>
+
+            <h3 class="h3 title">GuttenPlans x 1367</h3>
+
+            <p class="text">
+              Gutten Plans - Frozen dough specialist company that operates 24/5.
+            </p>
+
+            <a href="./pages/machine_gutten.html">
+                <button class="card-btn" aria-label="Show More">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <figure class="about-banner"
+              style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img loading="lazy" decoding="async" src="./assets/our-machine.png" width="150" height="80" alt="about banner">
+            </figure>
+
+            <h3 class="h3 title">EB Public Library x 1380</h3>
+
+            <p class="text">
+              EB Public Library - Public library that has high foot traffic 5-6 days a week.
+            </p>
+
+            <a href="./pages/machine_library.html">
+                <button class="card-btn" aria-label="Show More">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <figure class="about-banner"
+              style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img loading="lazy" decoding="async" src="./assets/our-machine.png" width="150" height="80" alt="about banner">
+            </figure>
+
+            <h3 class="h3 title">Earle Asphalt x 1371</h3>
+
+            <p class="text">
+              Earle Asphalt - A construction engineering firm that operates 5 days.
+            </p>
+
+            <a href="./pages/machine_earle.html">
+                <button class="card-btn" aria-label="Show More">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <figure class="about-banner"
+              style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img loading="lazy" decoding="async" src="./assets/our-machine.png" width="150" height="80" alt="about banner">
+            </figure>
+
+            <h3 class="h3 title">BSQ Mall x1364-Zales</h3>
+
+            <p class="text">
+              Brunswick Sq Mall - Mall with average foot traffic 7 days a week.
+            </p>
+
+            <a href="./pages/machine_zales.html">
+                <button class="card-btn" aria-label="Show More">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              </a>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="service-card">
+
+            <figure class="about-banner"
+              style="display: flex; justify-content: center; align-items: center; height: 100%;">
+              <img loading="lazy" decoding="async" src="./assets/our-machine.png" width="150" height="80" alt="about banner">
+            </figure>
+
+            <h3 class="h3 title">BSQ Mall x1366-ATT</h3>
+
+            <p class="text">
+              Brunswick Sq Mall - Mall with average foot traffic 7 days a week.
+            </p>
+
+            <a href="./pages/machine_att.html">
+                <button class="card-btn" aria-label="Show More">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+              </a>
+
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="contact us" id="contact">
+    <div class="container">
+
+      <h2 class="h2 section-title underline">Contact Us</h2>
+
+      <div id="formContainer ">
+        <form action=" ">
+          <div class="formInput ">
+            <input value="nama" id="nameInput" class="inputForm " type="text " placeholder="*Name ">
+            <input id="emailInput" class="inputForm " type="text " placeholder="*Email ">
+          </div>
+          <div class="formInput">
+            <select id="vendzoneInput" name="listVendzone" class="inputForm " id=" ">
+              <option value=" ">* Pre-order Your Vendzone</option>
+              <option value="1 ">GuttenPlans x1367</option>
+              <option value="2 ">EB Public Library x1380</option>
+              <option value="3 ">Earle Asphalt x1371</option>
+              <option value="4 ">BSQ Mall x1364-Zales</option>
+              <option value="4 ">BSQ Mall x1366-ATT</option>
+            </select>
+            <input id="phoneInput" class="inputForm " type="int " placeholder="*Phone / Whatsapp ">
+          </div>
+
+
+          <div class="formInput ">
+            <textarea id="messageInput" style="width: 100%; " name="massageForm " class="textareaForm " id=" "
+              placeholder="*Massage Content "></textarea>
+          </div>
+
+          <div id="btn_submit" style="display: flex; justify-content: center;">
+            <button id="submitButton" type="submit">Get my vendzone</button>
+          </div>
+
+          <p></p>
+          
+<!--OUR TEAM-->
+
+    <div class="main-container">
+      <h2 class="h2 section-title underline">Our Team</h2>
+      <div class="members">
+        <div class="team-member">
+          <img src="./assets/kharisma.jpeg">
+          <h4>Kharisma Andini P.</h4>
+          <p>Project Leader</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/ghina.jpg">
+          <h4>Ghina Briliana F.O.</h4>
+          <p>Front End Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/tessa.jpg">
+          <h4>Tesalonika Permatasari</h4>
+          <p>Front End Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/aulia.jpg">
+          <h4>Aulia Putri F.</h4>
+          <p>Front End Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/helmi.png">
+          <h4>Helmi Adityawarman</h4>
+          <p>Front End Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/kelvin.jpg">
+          <h4>Kelvin Garcia</h4>
+          <p>Front End Engineer</p>
+        </div>
+      </div>
+      <div class="members">
+        <div class="team-member">
+          <img src="./assets/ahmad.jpeg">
+          <h4>Ahmad Tri Y.</h4>
+          <p>Deployment Team</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/nabila.jpg">
+          <h4>Rr Nabilah Fitria A</h4>
+          <p>Pitch Deck Team</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/divia.jpg">
+          <h4>Divia Nadiatuz Z.</h4>
+          <p>Pitch Deck Team</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/aisyah.jpg">
+          <h4>Aisyah Ilmiyah</h4>
+          <p>Pitch Deck Team</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/kinanti.jpg">
+          <h4>Kinanti Nuringtyas</h4>
+          <p>Quality Assurance</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/anisa.jpg">
+          <h4>Anisa Pitriani P.M.</h4>
+          <p>Quality Assurance</p>
+        </div>
+      </div>
+    </div>
+<br> <br> <br> <br>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top section">
+      <div class="container">
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Agency</a>
+
+          <p class="text">
+          Vendzone as a vending machine factory and source
+          the world's leading automatic, will deliver
+          Your smart vending retail business solution!
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Data</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Machine</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Our Team</a>
+          </li>
+
+        </ul>
+
+        <!-- <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Our Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Strategy & Research</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Development</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Web Solution</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Digital Marketing</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">App Design</a>
+          </li>
+
+        </ul> -->
+
+        <!-- <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Other links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support</a>
+          </li>
+
+        </ul> -->
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Us</p>
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="call"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:+2786214313" class="footer-item-link">+62 8953 2989 0614</a>
+              <a href="tel:+2786871365" class="footer-item-link">+62 8953 2090 8765</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="mail"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@agency.com" class="footer-item-link">vendzone@agency.com</a>
+              <a href="mailto:help@agency.com" class="footer-item-link">helpdeskvendzone@agency.com</a>
+            </div>
+
+          </li>
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
+            </div>
+
+            <address class="footer-item-link">
+              Amphitheatre, ParkwayMounta, United States of America
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
     </div>
 
-    <div>
-        <h2>About Us</h2>
-        <h3>We are a company in the F&B sector that focuses on providing machines that provide products for everything from snacks, heavy meals to drinks</h3>
-        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <div class="footer-bottom">
+      <p>
+      <p>
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link"></a> Vendzone | Develop by Team3
+      </p>
     </div>
-    
-    <div>
-        <h2>Machines</h2>
+
+  </footer>
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <div class="over-lay">
+
+    <div class="pop-up">
+
+      <p class="pop-up-message">
+        Data Terkirim
+      </p>
+      <button id="closeButton">Tutup</button>
     </div>
+  </div>
+  
+  
+
+  <script src="./script.js" defer data-deferred="1"></script>
+  
 </body>
 </html>

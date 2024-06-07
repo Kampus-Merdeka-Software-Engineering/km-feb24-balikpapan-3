@@ -1,0 +1,560 @@
+{
+    "transactionPerMonth": [
+        {
+            "MonthName": "January",
+            "TransactionCount": "269"
+        },
+        {
+            "MonthName": "February",
+            "TransactionCount": "251"
+        },
+        {
+            "MonthName": "March",
+            "TransactionCount": "266"
+        },
+        {
+            "MonthName": "April",
+            "TransactionCount": "350"
+        },
+        {
+            "MonthName": "May",
+            "TransactionCount": "263"
+        },
+        {
+            "MonthName": "June",
+            "TransactionCount": "288"
+        },
+        {
+            "MonthName": "July",
+            "TransactionCount": "445"
+        },
+        {
+            "MonthName": "August",
+            "TransactionCount": "396"
+        },
+        {
+            "MonthName": "September",
+            "TransactionCount": "299"
+        },
+        {
+            "MonthName": "October",
+            "TransactionCount": "262"
+        },
+        {
+            "MonthName": "November",
+            "TransactionCount": "287"
+        },
+        {
+            "MonthName": "December",
+            "TransactionCount": "222"
+        }
+    ],
+    "transactionByProduct": [
+        {
+            "product": "Cheetos - Crunchy",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "43.5"
+        },
+        {
+            "product": "Cheetos - Fleming Hot Crunchy",
+            "category": "Food",
+            "quantity": "113",
+            "sales": "182.0"
+        },
+        {
+            "product": "Cheetos Baked - Crunchy Cheese",
+            "category": "Food",
+            "quantity": "24",
+            "sales": "36.0"
+        },
+        {
+            "product": "Cheetos Baked - Flaming Hot",
+            "category": "Food",
+            "quantity": "23",
+            "sales": "34.5"
+        },
+        {
+            "product": "Cheetos Cheddar Jalapeno",
+            "category": "Food",
+            "quantity": "35",
+            "sales": "52.5"
+        },
+        {
+            "product": "Cheetos Flaming Hot Limon Crunchy",
+            "category": "Food",
+            "quantity": "99",
+            "sales": "154.0"
+        },
+        {
+            "product": "Cheetos Puffs",
+            "category": "Food",
+            "quantity": "39",
+            "sales": "58.5"
+        },
+        {
+            "product": "CheezIt - Double Cheese",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "9.0"
+        },
+        {
+            "product": "CheezIt - Original",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "6.0"
+        },
+        {
+            "product": "CheezIt - White Cheddar",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Chesters Fries Flaming hot",
+            "category": "Food",
+            "quantity": "74",
+            "sales": "115.5"
+        },
+        {
+            "product": "Chum Fruit Bites - Mango/Strawberry",
+            "category": "Food",
+            "quantity": "8",
+            "sales": "10.0"
+        },
+        {
+            "product": "Coca Cola - Regular",
+            "category": "Carbonated",
+            "quantity": "311",
+            "sales": "466.5"
+        },
+        {
+            "product": "Coca Cola - Zero Sugar",
+            "category": "Carbonated",
+            "quantity": "280",
+            "sales": "344.0"
+        },
+        {
+            "product": "Doritos Cool Ranch",
+            "category": "Food",
+            "quantity": "40",
+            "sales": "60.0"
+        },
+        {
+            "product": "Doritos Famin Hot Nacho",
+            "category": "Food",
+            "quantity": "64",
+            "sales": "96.0"
+        },
+        {
+            "product": "Doritos Nacho Cheese",
+            "category": "Food",
+            "quantity": "49",
+            "sales": "73.5"
+        },
+        {
+            "product": "Fritos - Original",
+            "category": "Food",
+            "quantity": "37",
+            "sales": "55.5"
+        },
+        {
+            "product": "Funyuns - Flaming Hot",
+            "category": "Food",
+            "quantity": "103",
+            "sales": "156.5"
+        },
+        {
+            "product": "Goldfish Baked - Cheddar",
+            "category": "Food",
+            "quantity": "11",
+            "sales": "16.5"
+        },
+        {
+            "product": "Good Health Veggie Stix - Sea Salt",
+            "category": "Food",
+            "quantity": "13",
+            "sales": "19.5"
+        },
+        {
+            "product": "Good Health Veggie Stix - Zesty Ranch",
+            "category": "Food",
+            "quantity": "18",
+            "sales": "27.0"
+        },
+        {
+            "product": "Hersheys Milk Chocolate",
+            "category": "Food",
+            "quantity": "9",
+            "sales": "22.5"
+        },
+        {
+            "product": "Jack Links Beef Steak Original",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "39.5"
+        },
+        {
+            "product": "Jacks Links Bar Beef Strip",
+            "category": "Food",
+            "quantity": "9",
+            "sales": "18.0"
+        },
+        {
+            "product": "KitKat - Crisp Wafers",
+            "category": "Food",
+            "quantity": "186",
+            "sales": "422.5"
+        },
+        {
+            "product": "Lays - Barbecue",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "10.5"
+        },
+        {
+            "product": "Lays - Classic",
+            "category": "Food",
+            "quantity": "80",
+            "sales": "120.0"
+        },
+        {
+            "product": "Mini Chips Ahoy",
+            "category": "Food",
+            "quantity": "30",
+            "sales": "45.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Jalapeno",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "9.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Lime \u0026 Cracked Pe",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "6.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Sea Salt \u0026 Vinega",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "6.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Smokehouse BBQ",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Monster Energy Original",
+            "category": "Carbonated",
+            "quantity": "420",
+            "sales": "1264.0"
+        },
+        {
+            "product": "Munchies Snack mix Flaming Hot",
+            "category": "Food",
+            "quantity": "16",
+            "sales": "29.5"
+        },
+        {
+            "product": "Nature\u0027s Bakery Fig Bar - Blueberry",
+            "category": "Food",
+            "quantity": "78",
+            "sales": "117.0"
+        },
+        {
+            "product": "Nature\u0027s Bakery Fig Bar - Raspberry",
+            "category": "Food",
+            "quantity": "94",
+            "sales": "141.0"
+        },
+        {
+            "product": "Newtons Fig Bar",
+            "category": "Food",
+            "quantity": "20",
+            "sales": "30.0"
+        },
+        {
+            "product": "Nutri Grain Apple Cinnamon",
+            "category": "Food",
+            "quantity": "32",
+            "sales": "48.0"
+        },
+        {
+            "product": "Nutter Butter Bites",
+            "category": "Food",
+            "quantity": "15",
+            "sales": "16.0"
+        },
+        {
+            "product": "Oreo Mini",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "33.0"
+        },
+        {
+            "product": "Oreo Single Server 6 ct",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "58.0"
+        },
+        {
+            "product": "Pop Corners - Kettle Corn",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Pop Corners - Sea Salt",
+            "category": "Food",
+            "quantity": "9",
+            "sales": "13.5"
+        },
+        {
+            "product": "Pop Corners - Spicy Queso",
+            "category": "Food",
+            "quantity": "10",
+            "sales": "15.0"
+        },
+        {
+            "product": "Pop Corners - White Cheddar",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "1.5"
+        },
+        {
+            "product": "Popchips Potato - Barbeque",
+            "category": "Food",
+            "quantity": "8",
+            "sales": "12.0"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Pineapple Passion Fr",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "3.0"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Raspberry Lemonade",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "9.5"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Strawberry Banana",
+            "category": "Food",
+            "quantity": "18",
+            "sales": "24.5"
+        },
+        {
+            "product": "Pure Organic Pineapple Passionfruit",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "5.0"
+        },
+        {
+            "product": "Quaker Apple Cinnamon Rice Crisps",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.0"
+        },
+        {
+            "product": "Quaker ButterMilk Ranch Rice Crisps",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.5"
+        },
+        {
+            "product": "Quaker Caramel Rice Crisps",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "10.5"
+        },
+        {
+            "product": "Quaker Cheddar Rice Crisps",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "1.5"
+        },
+        {
+            "product": "Red Bull - Original",
+            "category": "Carbonated",
+            "quantity": "225",
+            "sales": "763.0"
+        },
+        {
+            "product": "Ritz Bits Cheese",
+            "category": "Food",
+            "quantity": "28",
+            "sales": "40.5"
+        },
+        {
+            "product": "Ruffles Baked  - Cheddar \u0026 Sour Cream",
+            "category": "Food",
+            "quantity": "17",
+            "sales": "25.5"
+        },
+        {
+            "product": "Skinny Pop Popcorn",
+            "category": "Food",
+            "quantity": "15",
+            "sales": "22.5"
+        },
+        {
+            "product": "Snapple Diet Tea - Lemon",
+            "category": "Non Carbonated",
+            "quantity": "45",
+            "sales": "112.5"
+        },
+        {
+            "product": "Snapple Diet Tea - Peach Tea",
+            "category": "Non Carbonated",
+            "quantity": "43",
+            "sales": "107.5"
+        },
+        {
+            "product": "Snapple Lemonade - black berry",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Lemonade - pineapple",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Lemonade - watermelon",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Tea - Lemon",
+            "category": "Non Carbonated",
+            "quantity": "75",
+            "sales": "187.5"
+        },
+        {
+            "product": "Snapple Tea - Peach",
+            "category": "Non Carbonated",
+            "quantity": "68",
+            "sales": "170.0"
+        },
+        {
+            "product": "Snapple Tea - Raspberry",
+            "category": "Non Carbonated",
+            "quantity": "96",
+            "sales": "240.0"
+        },
+        {
+            "product": "Spindrift - Sparkling Water  Lime",
+            "category": "Carbonated",
+            "quantity": "3",
+            "sales": "3.0"
+        },
+        {
+            "product": "Stretch Island Fruit Leathers Snacks - Variet",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "7.0"
+        },
+        {
+            "product": "SunChips Multigrain - French Onion",
+            "category": "Food",
+            "quantity": "15",
+            "sales": "22.5"
+        },
+        {
+            "product": "SunChips Multigrain - Harvest Cheddar",
+            "category": "Food",
+            "quantity": "39",
+            "sales": "58.5"
+        },
+        {
+            "product": "SunChips Multigrain - Original",
+            "category": "Food",
+            "quantity": "19",
+            "sales": "28.5"
+        },
+        {
+            "product": "SunChips Multigrain - Salsa",
+            "category": "Food",
+            "quantity": "25",
+            "sales": "37.5"
+        },
+        {
+            "product": "Sunkist Soda - Orange",
+            "category": "Carbonated",
+            "quantity": "290",
+            "sales": "381.5"
+        },
+        {
+            "product": "Takis - Hot Chilli Pepper \u0026 Lime",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Takis FUGEO mini",
+            "category": "Food",
+            "quantity": "34",
+            "sales": "50.25"
+        }
+    ],
+    "salesPerMonth": [
+        {
+            "month": "January",
+            "totalSales": "492.5"
+        },
+        {
+            "month": "February",
+            "totalSales": "554.0"
+        },
+        {
+            "month": "March",
+            "totalSales": "599.0"
+        },
+        {
+            "month": "April",
+            "totalSales": "734.5"
+        },
+        {
+            "month": "May",
+            "totalSales": "635.0"
+        },
+        {
+            "month": "June",
+            "totalSales": "657.5"
+        },
+        {
+            "month": "July",
+            "totalSales": "1004.0"
+        },
+        {
+            "month": "August",
+            "totalSales": "906.5"
+        },
+        {
+            "month": "September",
+            "totalSales": "656.5"
+        },
+        {
+            "month": "October",
+            "totalSales": "550.5"
+        },
+        {
+            "month": "November",
+            "totalSales": "571.0"
+        },
+        {
+            "month": "December",
+            "totalSales": "435.5"
+        }
+    ]
+}

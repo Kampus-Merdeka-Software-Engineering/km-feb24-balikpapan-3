@@ -1,0 +1,12 @@
+{
+    "typeOfPayment": [
+        {
+            "PaymentType": "Cash",
+            "TransactionPercentage": "65.33"
+        },
+        {
+            "PaymentType": "Credit",
+            "TransactionPercentage": "34.67"
+        }
+    ]
+}
