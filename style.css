@@ -297,6 +297,34 @@ body {
   align-items: center;
   gap: 30px;
 }
+.header-machine {
+  --color: var(--white);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 14px;
+  z-index: 4;
+  transition: var(--transition-1);
+}
+
+.header-machine.active {
+  --color: var(--st-patricks-blue);
+
+  position: fixed;
+  background-color: var(--white);
+  box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+}
+
+.header-machine .container{
+
+  background-color: var(--razzmatazz);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
 
 .logo {
   color: var(--color);
@@ -420,7 +448,18 @@ body {
   margin-block-end: 30px;
 }
 
+/*-----------------------------------*\
+    #Navbar machine
+  \*-----------------------------------*/
 
+  .navbar-machine {
+    background-color: var(--st-patricks-blue);
+    /* background-repeat: no-repeat, no-repeat, no-repeat; */
+    background-position: -280px bottom, center, center;
+    background-size: auto;
+    padding-block-start: 55px;
+    padding-block-end: 55px;
+  }
 
 
 
