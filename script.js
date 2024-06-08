@@ -108,6 +108,20 @@ fetchdata("./json/x1380.json").then((res) => {
 new gridjs.Grid({
   columns: ["Product", "Category", "Quantity", "Sales"],
   data: alltransactions,
+  style: {
+    table: {
+      border: '3px solid #fff,'
+    },
+    th: {
+      'background-color': 'rgba(30, 36, 112, 255)',
+      color: '#fff',
+      'border-bottom': '3px solid #ccc',
+      'text-align': 'center'
+    },
+    td: {
+      'text-align': 'center'
+    }
+  },
   pagination: true,
   sort: true,
   search: true,

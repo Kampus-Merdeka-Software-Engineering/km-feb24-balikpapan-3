@@ -140,7 +140,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: black;
   color: var(--purple-navy);
   font-size: 1.6rem;
 }
@@ -217,6 +217,7 @@ body {
 
 .section {
   padding-block: var(--section-padding);
+  background-color: black;
 }
 
 .section-title {
@@ -284,10 +285,10 @@ body {
 }
 
 .header.active {
-  --color: var(--st-patricks-blue);
+  --color: var(--white);
 
   position: fixed;
-  background-color: var(--white);
+  background-color: var(--st-patricks-blue);
   box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
 }
 
@@ -473,6 +474,7 @@ body {
 
 .about .section-title {
   margin-inline: 0;
+  color: white;
 }
 
 .about .underline::before {
@@ -483,6 +485,7 @@ body {
 .about-text {
   font-size: var(--fs-8);
   margin-block-end: 20px;
+  color: var(--white);
 }
 
 .stats-list {
@@ -496,6 +499,7 @@ body {
   box-shadow: var(--shadow);
   border-radius: var(--radius-12);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  background-color: #fff;
 }
 
 .stats-title {
@@ -505,6 +509,7 @@ body {
 }
 
 .stats-text {
+  color: var(--st-patricks-blue);
   font-size: var(--fs-8);
 }
 
@@ -613,6 +618,7 @@ body {
   box-shadow: var(--shadow);
   border-radius: var(--radius-12);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  background-color: #fff;
 }
 
 .service-card .card-icon {
@@ -817,6 +823,7 @@ body {
   border: .5px solid black;
   padding-left: 20px;
   height: 50px;
+  background-color: white;
 }
 
 .textareaForm {
@@ -847,7 +854,8 @@ body {
 }
 
 .footer-top {
-  background-image: url("../images/footer-bg.png"), var(--gradient-1);
+  /* background-image: url("../images/footer-bg.png"), var(--gradient-1); */
+  background-color: var(--st-patricks-blue);
   background-repeat: no-repeat;
   background-size: auto, 200%;
   background-position: center, center;
@@ -994,6 +1002,7 @@ body {
 
   .section-title {
     --fs-3: 3.6rem;
+    color: white;
   }
 
 
