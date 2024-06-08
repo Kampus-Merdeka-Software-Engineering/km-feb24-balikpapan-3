@@ -418,7 +418,7 @@ body {
   /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
-  padding-block-start: 120px;
+  padding-block-start: 80px;
   padding-block-end: var(--section-padding);
 }
 
