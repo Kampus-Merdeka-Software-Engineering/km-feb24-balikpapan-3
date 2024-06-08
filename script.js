@@ -1,4 +1,4 @@
-console.log("test")
+
 
 const fetchdata = async (url) => {
   const response = await fetch(url);
@@ -437,6 +437,7 @@ const handleSubmit = () => {
     var messageInput = document.getElementById("messageInput");
     var popupMessageElement =
     document.getElementsByClassName("pop-up-message")[0];
+    var popupImage = document.getElementById("pop-up-icon");
 
     var name = nameInput.value;
     var email = emailInput.value;
@@ -456,14 +457,22 @@ const handleSubmit = () => {
       message === ""
     ) {
       popupMessageElement.innerText = "Data tidak boleh kosong";
+      popupImage.src = "assets/cross.gif"
     } else if (!name.match(nameRegex)) {
       popupMessageElement.innerText = "Inputan nama salah";
+      popupImage.src = "assets/cross.gif"
     } else if (!phone.match(phoneRegex)) {
       popupMessageElement.innerText = "Inputan nomor telepon harus angka";
+      popupImage.src = "assets/cross.gif"
     } else if (!email.match(emailRegex)) {
       popupMessageElement.innerText = "Inputan email salah";
-    } else {
+      popupImage.src = "assets/cross.gif"
+    } else if (vendzone === " ") {
+      popupMessageElement.innerText = "Pilih vendzone terlebih dahulu";
+      popupImage.src = "assets/cross.gif"
+    }  else {
       popupMessageElement.innerText = "Data berhasil terkirim!";
+      popupImage.src = "assets/check.gif"
     }
     overlayElement = document.getElementsByClassName("over-lay")[0];
     overlayElement.style.display = "flex";
@@ -490,7 +499,7 @@ btnClose.addEventListener("click", handleClose);
 
 new gridjs.Grid({
   columns: ["Product", "Category", "Quantity", "Sales"],
-  data: alltransactions,
+  data: alltransactions ?? [],
   style: {
     table: {
       border: '3px solid #fff,'

@@ -416,9 +416,9 @@ body {
   \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-bg-bottom.png"),
+  /* background-image: url("../images/hero-bg-bottom.png"),
     url("../images/hero-bg.png"),
-    var(--gradient-1);
+    var(--gradient-1); */
   /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: -280px bottom, center, center;
   background-size: auto, cover, auto;
@@ -587,11 +587,24 @@ body {
   border-radius: 8px;
   color: #8a8a8a;
   width: 320px;
-  height: 400px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 24px;
+align-items: center;
+  /* gap: 16px; */
+}
+
+.pop-up-title-wrapper {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: end;
+}
+
+.pop-up-message {
+  display: flex;
+  flex-grow: 1;
 }
 
 .over-lay {
@@ -1412,4 +1425,8 @@ body {
 
 .slick-list {
   margin: 0 -16px;
+}
+
+.footer-grid {
+  grid-template-columns: auto 200px auto !important;
 }
