@@ -130,6 +130,12 @@ ion-icon {
 
 img {
   height: auto;
+  /* width: 240px; */
+}
+
+.img-ayam {
+  height: 325px;
+  width: 250px;
 }
 
 address {
@@ -573,7 +579,7 @@ body {
   margin-top: 0px;
   margin-bottom: 70px;
   width: 200px;
-  background-color: rgb(89, 14, 143);
+  background-color: var(--st-patricks-blue);
   color: white;
   height: 50px;
   border-radius: 10px;
