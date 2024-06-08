@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Split Screen Dashboard</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
     <style>
-        body {
+        .detail {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -25,51 +29,193 @@
             flex-direction: column;
             align-items: center;
         }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
         .chart-container {
             width: 80%;
-            margin-top: 20px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .section {
+            text-align: center;
+            margin: 20px 0;
         }
         h2 {
             margin-top: 0;
+            color: hsl(236, 57%, 28%);
         }
         ul {
             padding-left: 20px;
+            text-align: left;
+            display: inline-block;
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+  <header class="header" data-header>
+    <div class="container">
 
-<div class="left-panel">
-    <h2>Insights:</h2>
-    <ul>
-        <li>Pada machine GuttenPlans x1367, hanya 3 kategori yang diminati oleh pelanggan, yakni kategori karbonat, makanan, dan nonkarbonat. Dilihat dari jumlah pembelian, dari kategori karbonat pelanggan lebih menyukai produk Coca Cola - Reguler, Monster Energy Original, dan Sunkist Soda - Orange. Pada kategori makanan, konsumen lebih banyak membeli produk KitKat - Crisp Wafers, Cheetos - Fleming Hot Crunchy, dan Funyuns - Flaming Hot. Sedangkan produk dari kategori nonkarbonat yang diminati oleh konsumen adalah Snapple Tea - Raspberry, Snapple Tea - Lemon, dan Snapple Tea - Peach.</li>
-        <li>GuttenPlans x1367
-            Jumlah dari hasil transaksi selama 12 bulan pada mesin GuttenPlans x1367 adalah 6904.25</li>
-        <li>Machine GuttenPlans x1367
-            Jenis pembayaran yang paling banyak digunakan adalah Cash dengan jumlah 2827 
-            Jenis pembayaran Credit berada di urutan kedua dengan jumlah 583
-            </li>
+      <div class="overlay" data-overlay></div>
+
+      <figure class="about-banner">
+        <img class="logo-white" loading="lazy" decoding="async" src="../assets/logo-white.png" width="200px" height="200px" 
+          alt="about banner">
+      </figure>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">Vendzone</a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>Data</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>Machine</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>Contact Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-link" data-navbar-link>Our Team</a>
+          </li>
+
         </ul>
-    
-        <h2>Recommendations:</h2>
-        <ul>
-            <li>Mempermudah pemakaian metode pembayaran cash dengan menyediakan sistem kembalian di machine GuttenPlans x1367.</li>
-            <li>Mempertahankan produk dengan penjualan top 3 teratas di machine GuttenPlans x1367 pada masing-masing kategori.</li>
-            <li>Menghilangkan produk yang berada di bawah top 5 penjualan dari masing-masing kategori di machine GuttenPlans x1367.</li>
-            <li>Menambahkan pembayaran lain seperti debit atau Qris untuk metode pembelian, karena mengikuti perkembangan zaman dan pembayaran yang lebih mudah dan bervariasi.</li>
-        </ul>
+
+      </nav>
+
+      <a href="../index.html" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>Get Yours Now!</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
     </div>
-    
-    <div class="right-panel">
-        <div class="chart-container">
+  </header>
+
+  <section class="navbar-machine" id="home"></section>
+
+    <div class="container">
+        <div class="section">
+            <h2>GuttenPlans x1367</h2>
+        </div>
+        <div class="chart-container section">
             <canvas id="chart1"></canvas>
         </div>
-        <div class="chart-container">
+
+        <div class="section">
+            <h2>Insights:</h2>
+                <ul>
+                    <li>Pada machine GuttenPlans x1367, hanya 3 kategori yang diminati oleh pelanggan, yakni kategori karbonat, makanan, dan nonkarbonat. Dilihat dari jumlah pembelian, dari kategori karbonat pelanggan lebih menyukai produk Coca Cola - Reguler, Monster Energy Original, dan Sunkist Soda - Orange. Pada kategori makanan, konsumen lebih banyak membeli produk KitKat - Crisp Wafers, Cheetos - Fleming Hot Crunchy, dan Funyuns - Flaming Hot. Sedangkan produk dari kategori nonkarbonat yang diminati oleh konsumen adalah Snapple Tea - Raspberry, Snapple Tea - Lemon, dan Snapple Tea - Peach.</li>
+                    <li>GuttenPlans x1367
+                        Jumlah dari hasil transaksi selama 12 bulan pada mesin GuttenPlans x1367 adalah 6904.25</li>
+                    <li>Machine GuttenPlans x1367
+                        Jenis pembayaran yang paling banyak digunakan adalah Cash dengan jumlah 2827 
+                        Jenis pembayaran Credit berada di urutan kedua dengan jumlah 583
+                    </li>
+                </ul>
+        </div>
+
+        <div class="chart-container section">
             <canvas id="chart2"></canvas>
         </div>
+
+        <div class="section">
+            <h2>Recommendations:</h2>
+                <ul>
+                    <li>Mempermudah pemakaian metode pembayaran cash dengan menyediakan sistem kembalian di machine GuttenPlans x1367.</li>
+                    <li>Mempertahankan produk dengan penjualan top 3 teratas di machine GuttenPlans x1367 pada masing-masing kategori.</li>
+                    <li>Menghilangkan produk yang berada di bawah top 5 penjualan dari masing-masing kategori di machine GuttenPlans x1367.</li>
+                    <li>Menambahkan pembayaran lain seperti debit atau Qris untuk metode pembelian, karena mengikuti perkembangan zaman dan pembayaran yang lebih mudah dan bervariasi.</li>
+                </ul>
+        </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Agency</a>
+                    <p class="text">Vendzone as a vending machine factory and source the world's leading automatic, will deliver Your smart vending retail business solution!</p>
+                    <ul class="social-list">
+                        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Our links</p></li>
+                    <li><a href="#" class="footer-link">Home</a></li>
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Data</a></li>
+                    <li><a href="#" class="footer-link">Machine</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Our Team</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Contact Us</p></li>
+                    <li class="footer-item">
+                        <div class="footer-item-icon"><ion-icon name="call"></ion-icon></div>
+                        <div>
+                            <a href="tel:+2786214313" class="footer-item-link">+62 8953 2989 0614</a>
+                            <a href="tel:+2786871365" class="footer-item-link">+62 8953 2090 8765</a>
+                        </div>
+                    </li>
+                    <li class="footer-item">
+                        <div class="footer-item-icon"><ion-icon name="mail"></ion-icon></div>
+                        <div>
+                            <a href="mailto:info@agency.com" class="footer-item-link">vendzone@agency.com</a>
+                            <a href="mailto:help@agency.com" class="footer-item-link">helpdeskvendzone@agency.com</a>
+                        </div>
+                    </li>
+                    <li class="footer-item">
+                        <div class="footer-item-icon"><ion-icon name="location"></ion-icon></div>
+                        <address class="footer-item-link">Broome St, NY 10002, California, USA</address>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li><p class="footer-list-title">Legal</p></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="#" class="footer-link">Security</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2023 Agency. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
         const ctx1 = document.getElementById('chart1').getContext('2d');
         const chart1 = new Chart(ctx1, {
@@ -92,7 +238,7 @@
                 }
             }
         });
-    
+
         const ctx2 = document.getElementById('chart2').getContext('2d');
         const chart2 = new Chart(ctx2, {
             type: 'bar',
@@ -124,7 +270,5 @@
             }
         });
     </script>
-    
-    </body>
-    </html>
-    
+</body>
+</html>
