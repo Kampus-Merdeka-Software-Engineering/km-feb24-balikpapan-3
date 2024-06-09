@@ -6,54 +6,6 @@
     <title>Split Screen Dashboard</title>
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
-    <style>
-        .detail {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .left-panel, .right-panel {
-            padding: 20px;
-        }
-        .left-panel {
-            width: 50%;
-            background-color: #f4f4f4;
-            border-right: 1px solid #ddd;
-        }
-        .right-panel {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .chart-container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
-        .section {
-            text-align: center;
-            margin: 20px 0;
-        }
-        h2 {
-            margin-top: 0;
-            color: hsl(236, 57%, 28%);
-        }
-        ul {
-            padding-left: 20px;
-            text-align: left;
-            display: inline-block;
-        }
-    </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -143,6 +95,8 @@
                 </ul>
         </div>
 
+
+
         <div class="chart-container section">
             <canvas id="chart2"></canvas>
         </div>
@@ -185,33 +139,37 @@
                         <div class="footer-item-icon"><ion-icon name="call"></ion-icon></div>
                         <div>
                             <a href="tel:+2786214313" class="footer-item-link">+62 8953 2989 0614</a>
-                            <a href="tel:+2786871365" class="footer-item-link">+62 8953 2090 8765</a>
+                            <a href="tel:+2786214313" class="footer-item-link">+62 8231 1939 0523</a>
                         </div>
                     </li>
                     <li class="footer-item">
                         <div class="footer-item-icon"><ion-icon name="mail"></ion-icon></div>
                         <div>
-                            <a href="mailto:info@agency.com" class="footer-item-link">vendzone@agency.com</a>
-                            <a href="mailto:help@agency.com" class="footer-item-link">helpdeskvendzone@agency.com</a>
+                            <a href="mailto:example@gmail.com" class="footer-item-link">vendzone@gmail.com</a>
+                            <a href="mailto:example@gmail.com" class="footer-item-link">info@vendzone.co.id</a>
                         </div>
                     </li>
                     <li class="footer-item">
                         <div class="footer-item-icon"><ion-icon name="location"></ion-icon></div>
-                        <address class="footer-item-link">Broome St, NY 10002, California, USA</address>
+                        <address class="footer-item-link">Karangmenjangan No.15, Sukolilo, Surabaya</address>
                     </li>
                 </ul>
                 <ul class="footer-list">
-                    <li><p class="footer-list-title">Legal</p></li>
-                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="#" class="footer-link">Terms & Conditions</a></li>
-                    <li><a href="#" class="footer-link">Security</a></li>
+                    <li><p class="footer-list-title">Opening Hours</p></li>
+                    <li class="footer-item">
+                        <div class="footer-item-icon"><ion-icon name="time"></ion-icon></div>
+                        <time class="footer-item-link" datetime="09:00">Mon - Sat 09:00 - 18:00</time>
+                    </li>
+                    <li class="footer-item">
+                        <div class="footer-item-icon"><ion-icon name="time"></ion-icon></div>
+                        <time class="footer-item-link" datetime="09:00">Sun 09:00 - 13:00</time>
+                    </li>
                 </ul>
             </div>
         </div>
-
         <div class="footer-bottom">
             <div class="container">
-                <p class="copyright">&copy; 2023 Agency. All Rights Reserved</p>
+                <p class="copyright">&copy; 2024 <a href="#">Vendzone</a>. All Rights Reserved</p>
             </div>
         </div>
     </footer>
@@ -225,20 +183,41 @@
                 datasets: [{
                     label: 'Total Revenue for Each Machine',
                     data: [1731.75, 1538.25, 1808.75, 6347.75, 6904.25],
-                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)', // Blue bars with transparency
+                    borderColor: 'rgba(54, 162, 235, 1)', // Blue border
                     borderWidth: 1
                 }]
             },
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#ffffff' // White ticks
+                        },
+                        grid: {
+                            color: '#ffffff' // White grid lines
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#ffffff' // White ticks
+                        },
+                        grid: {
+                            color: '#ffffff' // White grid lines
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#ffffff' // White legend labels
+                        }
                     }
                 }
             }
         });
-
+    
         const ctx2 = document.getElementById('chart2').getContext('2d');
         const chart2 = new Chart(ctx2, {
             type: 'bar',
@@ -248,15 +227,15 @@
                     {
                         label: 'Cash',
                         data: [571, 438, 689, 1583, 2827],
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.5)', // Red bars with transparency
+                        borderColor: 'rgba(255, 99, 132, 1)', // Red border
                         borderWidth: 1
                     },
                     {
                         label: 'Credit',
                         data: [326, 282, 298, 1285, 583],
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.5)', // Blue bars with transparency
+                        borderColor: 'rgba(54, 162, 235, 1)', // Blue border
                         borderWidth: 1
                     }
                 ]
@@ -264,11 +243,37 @@
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#ffffff' // White ticks
+                        },
+                        grid: {
+                            color: '#ffffff' // White grid lines
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#ffffff' // White ticks
+                        },
+                        grid: {
+                            color: '#ffffff' // White grid lines
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#ffffff' // White legend labels
+                        }
                     }
                 }
             }
         });
     </script>
+    
+    
+    
+    
+    <script src="../script.js"></script>
 </body>
 </html>
