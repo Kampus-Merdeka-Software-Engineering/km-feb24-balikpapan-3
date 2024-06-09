@@ -1,0 +1,1066 @@
+{
+    "transactionByProduct": [
+        {
+            "product": "Autumns Granola Bar - Cinnamon Almond",
+            "category": "Food",
+            "quantity": "19",
+            "sales": "38.0"
+        },
+        {
+            "product": "Bai Antioxidant - Brasilia BB",
+            "category": "Non Carbonated",
+            "quantity": "5",
+            "sales": "12.75"
+        },
+        {
+            "product": "Bai Antioxidant - Kula Watermelon",
+            "category": "Non Carbonated",
+            "quantity": "5",
+            "sales": "13.75"
+        },
+        {
+            "product": "Bai Antioxidant - Kupang strawberry kiwi",
+            "category": "Non Carbonated",
+            "quantity": "14",
+            "sales": "38.5"
+        },
+        {
+            "product": "Bai Antioxidant - Molokai Coconut",
+            "category": "Non Carbonated",
+            "quantity": "12",
+            "sales": "30.0"
+        },
+        {
+            "product": "Bai Antioxidant - Tanzania Lemon Super Tea",
+            "category": "Non Carbonated",
+            "quantity": "71",
+            "sales": "195.25"
+        },
+        {
+            "product": "Bai Antioxidant - Zambia Bingcherry",
+            "category": "Non Carbonated",
+            "quantity": "18",
+            "sales": "45.75"
+        },
+        {
+            "product": "Bai Lemonade - Burundi Blueberry",
+            "category": "Non Carbonated",
+            "quantity": "10",
+            "sales": "25.75"
+        },
+        {
+            "product": "Belvita Breakfast Biscuit Bites - Blueberry",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "9.0"
+        },
+        {
+            "product": "Belvita Breakfast Cookies - Blueberry",
+            "category": "Food",
+            "quantity": "3",
+            "sales": "4.5"
+        },
+        {
+            "product": "Belvita Snack Bites - Cinnamon BS Go Paks",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "15.0"
+        },
+        {
+            "product": "Belvita Snack Packs - Blueberry",
+            "category": "Food",
+            "quantity": "33",
+            "sales": "45.75"
+        },
+        {
+            "product": "Belvita Snack Packs - Chocolate",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Belvita Snack Packs - Cinnamon",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "2.5"
+        },
+        {
+            "product": "BodyArmor  LYTE - Blueberry Pomegranate",
+            "category": "Non Carbonated",
+            "quantity": "32",
+            "sales": "88.0"
+        },
+        {
+            "product": "BodyArmor LYTE  - Berry Punch",
+            "category": "Water",
+            "quantity": "5",
+            "sales": "12.5"
+        },
+        {
+            "product": "BodyArmor LYTE  - Peach Mango",
+            "category": "Water",
+            "quantity": "41",
+            "sales": "108.25"
+        },
+        {
+            "product": "BodyArmor LYTE - Strawberry Lemonade",
+            "category": "Water",
+            "quantity": "37",
+            "sales": "101.75"
+        },
+        {
+            "product": "Bubly - Blackberry",
+            "category": "Water",
+            "quantity": "4",
+            "sales": "6.0"
+        },
+        {
+            "product": "Bubly - Cherry",
+            "category": "Carbonated",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Bubly - Grapefruit",
+            "category": "Water",
+            "quantity": "3",
+            "sales": "4.5"
+        },
+        {
+            "product": "Bubly - Lime",
+            "category": "Water",
+            "quantity": "4",
+            "sales": "6.0"
+        },
+        {
+            "product": "Bubly - Mango",
+            "category": "Carbonated",
+            "quantity": "5",
+            "sales": "7.5"
+        },
+        {
+            "product": "Cheetos - Crunchy",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "43.5"
+        },
+        {
+            "product": "Cheetos - Fleming Hot Crunchy",
+            "category": "Food",
+            "quantity": "113",
+            "sales": "182.0"
+        },
+        {
+            "product": "Cheetos Baked - Crunchy Cheese",
+            "category": "Food",
+            "quantity": "31",
+            "sales": "46.5"
+        },
+        {
+            "product": "Cheetos Baked - Flaming Hot",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "43.5"
+        },
+        {
+            "product": "Cheetos Cheddar Jalapeno",
+            "category": "Food",
+            "quantity": "35",
+            "sales": "52.5"
+        },
+        {
+            "product": "Cheetos Flaming Hot Limon Crunchy",
+            "category": "Food",
+            "quantity": "99",
+            "sales": "154.0"
+        },
+        {
+            "product": "Cheetos Puffs",
+            "category": "Food",
+            "quantity": "39",
+            "sales": "58.5"
+        },
+        {
+            "product": "CheezIt - Cheddar Sour Cream and Onion",
+            "category": "Food",
+            "quantity": "47",
+            "sales": "68.5"
+        },
+        {
+            "product": "CheezIt - Double Cheese",
+            "category": "Food",
+            "quantity": "61",
+            "sales": "85.5"
+        },
+        {
+            "product": "CheezIt - Go Paks",
+            "category": "Food",
+            "quantity": "31",
+            "sales": "114.0"
+        },
+        {
+            "product": "CheezIt - Original",
+            "category": "Food",
+            "quantity": "205",
+            "sales": "319.25"
+        },
+        {
+            "product": "CheezIt - White Cheddar",
+            "category": "Food",
+            "quantity": "77",
+            "sales": "112.0"
+        },
+        {
+            "product": "Chesters Fries Flaming hot",
+            "category": "Food",
+            "quantity": "74",
+            "sales": "115.5"
+        },
+        {
+            "product": "Chum Fruit Bites - Mango/Strawberry",
+            "category": "Food",
+            "quantity": "14",
+            "sales": "17.5"
+        },
+        {
+            "product": "Coca Cola - Regular",
+            "category": "Carbonated",
+            "quantity": "353",
+            "sales": "550.5"
+        },
+        {
+            "product": "Coca Cola - Zero Sugar",
+            "category": "Carbonated",
+            "quantity": "661",
+            "sales": "987.0"
+        },
+        {
+            "product": "Doritos Cool Ranch",
+            "category": "Food",
+            "quantity": "40",
+            "sales": "60.0"
+        },
+        {
+            "product": "Doritos Famin Hot Nacho",
+            "category": "Food",
+            "quantity": "64",
+            "sales": "96.0"
+        },
+        {
+            "product": "Doritos Nacho Cheese",
+            "category": "Food",
+            "quantity": "49",
+            "sales": "73.5"
+        },
+        {
+            "product": "Fritos - Original",
+            "category": "Food",
+            "quantity": "57",
+            "sales": "92.0"
+        },
+        {
+            "product": "Funyuns - Flaming Hot",
+            "category": "Food",
+            "quantity": "103",
+            "sales": "156.5"
+        },
+        {
+            "product": "Genius Keto Bar - Chocolate Dream",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "58.0"
+        },
+        {
+            "product": "Goldfish Baked - Cheddar",
+            "category": "Food",
+            "quantity": "159",
+            "sales": "208.5"
+        },
+        {
+            "product": "Good Health Veggie Stix - Sea Salt",
+            "category": "Food",
+            "quantity": "54",
+            "sales": "81.0"
+        },
+        {
+            "product": "Good Health Veggie Stix - Zesty Ranch",
+            "category": "Food",
+            "quantity": "26",
+            "sales": "39.0"
+        },
+        {
+            "product": "Hersheys Milk Chocolate",
+            "category": "Food",
+            "quantity": "15",
+            "sales": "34.5"
+        },
+        {
+            "product": "Honest Tea - Berry Hibiscus",
+            "category": "Non Carbonated",
+            "quantity": "10",
+            "sales": "27.5"
+        },
+        {
+            "product": "Hungry Buddha - Chocolate Chip",
+            "category": "Food",
+            "quantity": "13",
+            "sales": "26.0"
+        },
+        {
+            "product": "Hungry Buddha - Coconut Cocoa",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "12.0"
+        },
+        {
+            "product": "Iberia Coconut Water",
+            "category": "Non Carbonated",
+            "quantity": "97",
+            "sales": "194.0"
+        },
+        {
+            "product": "Ice Breakers Ice Cubes - PepperMint",
+            "category": "Food",
+            "quantity": "24",
+            "sales": "120.0"
+        },
+        {
+            "product": "Jack Links Beef Steak Original",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "39.5"
+        },
+        {
+            "product": "Jacks Links Bar Beef Strip",
+            "category": "Food",
+            "quantity": "33",
+            "sales": "66.0"
+        },
+        {
+            "product": "KIND Bar - Dark Choc Almond SeaSalt",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "3.0"
+        },
+        {
+            "product": "Keep Healthy - Chocolate Coconut",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "4.0"
+        },
+        {
+            "product": "Keep Healthy - Chocolate Fudge",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "14.0"
+        },
+        {
+            "product": "Keep Healthy - Sea Salt Brownie",
+            "category": "Food",
+            "quantity": "3",
+            "sales": "6.0"
+        },
+        {
+            "product": "Keto Bar - Chocolate Dream",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "12.0"
+        },
+        {
+            "product": "Keto Bar - Creamy Peanut Butter Chocolate",
+            "category": "Food",
+            "quantity": "70",
+            "sales": "139.5"
+        },
+        {
+            "product": "Keto Krisp - Almond Butter",
+            "category": "Carbonated",
+            "quantity": "28",
+            "sales": "51.5"
+        },
+        {
+            "product": "Keto Krisp - Almond Butter",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "4.0"
+        },
+        {
+            "product": "Keto Krisp - Almond/Chocolate",
+            "category": "Carbonated",
+            "quantity": "15",
+            "sales": "30.25"
+        },
+        {
+            "product": "Kinder - Bueno - Crispy Creamy Chocolate",
+            "category": "Food",
+            "quantity": "102",
+            "sales": "204.0"
+        },
+        {
+            "product": "KitKat - Crisp Wafers",
+            "category": "Food",
+            "quantity": "274",
+            "sales": "590.5"
+        },
+        {
+            "product": "Larabar - Peanut Butter chocolate Chip",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "2.0"
+        },
+        {
+            "product": "Lays - Barbecue",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "10.5"
+        },
+        {
+            "product": "Lays - Classic",
+            "category": "Food",
+            "quantity": "88",
+            "sales": "137.0"
+        },
+        {
+            "product": "Lays Baked - Barbecue",
+            "category": "Food",
+            "quantity": "3",
+            "sales": "4.5"
+        },
+        {
+            "product": "Lays Baked - Original",
+            "category": "Food",
+            "quantity": "11",
+            "sales": "16.5"
+        },
+        {
+            "product": "Lenny \u0026 Larrys - Chocolate Chip",
+            "category": "Food",
+            "quantity": "53",
+            "sales": "121.0"
+        },
+        {
+            "product": "Lenny \u0026 Larrys - SnickerDoodle",
+            "category": "Food",
+            "quantity": "45",
+            "sales": "127.5"
+        },
+        {
+            "product": "Lindens - Chocolate Chippers",
+            "category": "Food",
+            "quantity": "30",
+            "sales": "57.0"
+        },
+        {
+            "product": "Made in Nature - Mangoes Sweet \u0026 Tangy",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "8.0"
+        },
+        {
+            "product": "Mini Chips Ahoy",
+            "category": "Food",
+            "quantity": "62",
+            "sales": "158.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Jalapeno",
+            "category": "Food",
+            "quantity": "56",
+            "sales": "84.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Lime \u0026 Cracked Pe",
+            "category": "Food",
+            "quantity": "57",
+            "sales": "85.5"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Sea Salt \u0026 Vinega",
+            "category": "Food",
+            "quantity": "66",
+            "sales": "99.0"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Sea Salt Original",
+            "category": "Food",
+            "quantity": "73",
+            "sales": "109.5"
+        },
+        {
+            "product": "Miss Vickie\u0027s Potato Chip - Smokehouse BBQ",
+            "category": "Food",
+            "quantity": "61",
+            "sales": "90.5"
+        },
+        {
+            "product": "Monster Energy  Zero Ultra",
+            "category": "Carbonated",
+            "quantity": "10",
+            "sales": "30.0"
+        },
+        {
+            "product": "Monster Energy Original",
+            "category": "Carbonated",
+            "quantity": "516",
+            "sales": "1552.0"
+        },
+        {
+            "product": "Munchies Snack mix Flaming Hot",
+            "category": "Food",
+            "quantity": "16",
+            "sales": "29.5"
+        },
+        {
+            "product": "Nature\u0027s Bakery Fig Bar - Blueberry",
+            "category": "Food",
+            "quantity": "83",
+            "sales": "124.5"
+        },
+        {
+            "product": "Nature\u0027s Bakery Fig Bar - Raspberry",
+            "category": "Food",
+            "quantity": "95",
+            "sales": "142.5"
+        },
+        {
+            "product": "Nature\u0027s Garden Trail Mix - Cranberry Healthy",
+            "category": "Food",
+            "quantity": "9",
+            "sales": "13.5"
+        },
+        {
+            "product": "Nature\u0027s Garden Trail Mix - Heart Healthy Mix",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.5"
+        },
+        {
+            "product": "Nature\u0027s Garden Trail Mix - Omega 3",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.5"
+        },
+        {
+            "product": "Nature\u0027s Valley Chewy Granola Bar - Fruit \u0026 N",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "1.25"
+        },
+        {
+            "product": "Nature\u0027s Valley Crunchy Granola Bar - Oats \u0026",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "1.25"
+        },
+        {
+            "product": "Newtons Fig Bar",
+            "category": "Food",
+            "quantity": "49",
+            "sales": "78.5"
+        },
+        {
+            "product": "NuGo Dark Chocolate - Choc Chip",
+            "category": "Food",
+            "quantity": "9",
+            "sales": "18.0"
+        },
+        {
+            "product": "NuGo Dark Chocolate - Pretzel Sea Salt",
+            "category": "Food",
+            "quantity": "6",
+            "sales": "12.0"
+        },
+        {
+            "product": "Nutri Grain Apple Cinnamon",
+            "category": "Food",
+            "quantity": "32",
+            "sales": "48.0"
+        },
+        {
+            "product": "Nutter Butter Bites",
+            "category": "Food",
+            "quantity": "32",
+            "sales": "41.5"
+        },
+        {
+            "product": "Oberto Specialty Meats - Original",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "11.0"
+        },
+        {
+            "product": "Orchard Bar - Cranberry Orange \u0026 Walnut",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "2.0"
+        },
+        {
+            "product": "Orchard Bar - Pineapple Coconut \u0026 Macadamia",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "2.0"
+        },
+        {
+            "product": "Orchard Bar - Variety",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "14.0"
+        },
+        {
+            "product": "Oreo Mini",
+            "category": "Food",
+            "quantity": "141",
+            "sales": "236.0"
+        },
+        {
+            "product": "Oreo Single Server 6 ct",
+            "category": "Food",
+            "quantity": "54",
+            "sales": "108.0"
+        },
+        {
+            "product": "Poland Springs Water",
+            "category": "Water",
+            "quantity": "457",
+            "sales": "702.5"
+        },
+        {
+            "product": "Pop Corners - Kettle Corn",
+            "category": "Food",
+            "quantity": "67",
+            "sales": "100.5"
+        },
+        {
+            "product": "Pop Corners - Sea Salt",
+            "category": "Food",
+            "quantity": "88",
+            "sales": "132.0"
+        },
+        {
+            "product": "Pop Corners - Spicy Queso",
+            "category": "Food",
+            "quantity": "51",
+            "sales": "76.5"
+        },
+        {
+            "product": "Pop Corners - Sweet \u0026 Salty Kettle",
+            "category": "Food",
+            "quantity": "21",
+            "sales": "31.5"
+        },
+        {
+            "product": "Pop Corners - White Cheddar",
+            "category": "Food",
+            "quantity": "60",
+            "sales": "90.0"
+        },
+        {
+            "product": "Popchips Potato - Barbeque",
+            "category": "Food",
+            "quantity": "23",
+            "sales": "34.5"
+        },
+        {
+            "product": "Popchips Potato - Sea Salt",
+            "category": "Food",
+            "quantity": "29",
+            "sales": "43.5"
+        },
+        {
+            "product": "Popchips Potato - Sour Cream \u0026 Onion",
+            "category": "Food",
+            "quantity": "13",
+            "sales": "19.5"
+        },
+        {
+            "product": "Pringles - Cheddar Cheese",
+            "category": "Food",
+            "quantity": "39",
+            "sales": "122.0"
+        },
+        {
+            "product": "Pringles - Original",
+            "category": "Food",
+            "quantity": "24",
+            "sales": "79.0"
+        },
+        {
+            "product": "Pringles - Sour Cream \u0026 Onion",
+            "category": "Food",
+            "quantity": "36",
+            "sales": "119.0"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Pineapple Passion Fr",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "3.0"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Raspberry Lemonade",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "9.5"
+        },
+        {
+            "product": "Pure Organic Fruit Bar - Strawberry Banana",
+            "category": "Food",
+            "quantity": "18",
+            "sales": "24.5"
+        },
+        {
+            "product": "Pure Organic Pineapple Passionfruit",
+            "category": "Food",
+            "quantity": "5",
+            "sales": "5.0"
+        },
+        {
+            "product": "Quaker Apple Cinnamon Rice Crisps",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.0"
+        },
+        {
+            "product": "Quaker ButterMilk Ranch Rice Crisps",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "4.5"
+        },
+        {
+            "product": "Quaker Caramel Rice Crisps",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "10.5"
+        },
+        {
+            "product": "Quaker Cheddar Rice Crisps",
+            "category": "Food",
+            "quantity": "1",
+            "sales": "1.5"
+        },
+        {
+            "product": "RXBAR - Protein Bar - Chocolate Sea Salt",
+            "category": "Food",
+            "quantity": "42",
+            "sales": "84.0"
+        },
+        {
+            "product": "RXBAR - Protein Bar - Peanut Butter",
+            "category": "Food",
+            "quantity": "40",
+            "sales": "80.0"
+        },
+        {
+            "product": "Red Bull - Energy Drink - Sugar Free",
+            "category": "Carbonated",
+            "quantity": "21",
+            "sales": "73.5"
+        },
+        {
+            "product": "Red Bull - Original",
+            "category": "Carbonated",
+            "quantity": "239",
+            "sales": "812.0"
+        },
+        {
+            "product": "Remedy Kombucha - Ginger Lemon",
+            "category": "Carbonated",
+            "quantity": "2",
+            "sales": "6.0"
+        },
+        {
+            "product": "Ritz Bits Cheese",
+            "category": "Food",
+            "quantity": "35",
+            "sales": "51.0"
+        },
+        {
+            "product": "Ritz Bits Peanut Butter",
+            "category": "Food",
+            "quantity": "13",
+            "sales": "21.0"
+        },
+        {
+            "product": "Robert Irvine\u0027s - Fit Crunch -  Chocolate Pea",
+            "category": "Food",
+            "quantity": "173",
+            "sales": "346.0"
+        },
+        {
+            "product": "Ruffles Baked  - Cheddar \u0026 Sour Cream",
+            "category": "Food",
+            "quantity": "20",
+            "sales": "30.0"
+        },
+        {
+            "product": "S. Pellegrino Essenza Mineral Water - Blood O",
+            "category": "Carbonated",
+            "quantity": "15",
+            "sales": "37.5"
+        },
+        {
+            "product": "S. Pellegrino Sparkling Mineral Water",
+            "category": "Water",
+            "quantity": "68",
+            "sales": "136.0"
+        },
+        {
+            "product": "Seapoint Farms Dry Roasted Edamame - Wasabi",
+            "category": "Food",
+            "quantity": "39",
+            "sales": "96.5"
+        },
+        {
+            "product": "Simply Protein - Dark Chocolate Sea Salt",
+            "category": "Food",
+            "quantity": "16",
+            "sales": "32.0"
+        },
+        {
+            "product": "Simply Protein - Lemon Coconut",
+            "category": "Food",
+            "quantity": "31",
+            "sales": "62.0"
+        },
+        {
+            "product": "Simply Protein - Peanut Butter Chocolate",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "44.0"
+        },
+        {
+            "product": "Skinny Pop Popcorn",
+            "category": "Food",
+            "quantity": "15",
+            "sales": "22.5"
+        },
+        {
+            "product": "Skippy Peanut Butter - Go Paks",
+            "category": "Food",
+            "quantity": "2",
+            "sales": "9.0"
+        },
+        {
+            "product": "Snapple Diet Tea - Lemon",
+            "category": "Non Carbonated",
+            "quantity": "97",
+            "sales": "242.5"
+        },
+        {
+            "product": "Snapple Diet Tea - Peach Tea",
+            "category": "Non Carbonated",
+            "quantity": "116",
+            "sales": "290.0"
+        },
+        {
+            "product": "Snapple Diet Tea - Raspberry",
+            "category": "Non Carbonated",
+            "quantity": "34",
+            "sales": "85.0"
+        },
+        {
+            "product": "Snapple Lemonade - black berry",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Lemonade - pineapple",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Lemonade - watermelon",
+            "category": "Non Carbonated",
+            "quantity": "8",
+            "sales": "20.0"
+        },
+        {
+            "product": "Snapple Tea - Lemon",
+            "category": "Non Carbonated",
+            "quantity": "106",
+            "sales": "265.0"
+        },
+        {
+            "product": "Snapple Tea - Peach",
+            "category": "Non Carbonated",
+            "quantity": "68",
+            "sales": "170.0"
+        },
+        {
+            "product": "Snapple Tea - Raspberry",
+            "category": "Non Carbonated",
+            "quantity": "139",
+            "sales": "350.75"
+        },
+        {
+            "product": "Snyder\u0027s of Hanover Pretzel - Cheddar Cheese",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "45.0"
+        },
+        {
+            "product": "Snyder\u0027s of Hanover Pretzel Pieces - Cheddar",
+            "category": "Food",
+            "quantity": "22",
+            "sales": "52.5"
+        },
+        {
+            "product": "Snyder\u0027s of Hanover Pretzel Pieces - Honey Mu",
+            "category": "Food",
+            "quantity": "35",
+            "sales": "76.5"
+        },
+        {
+            "product": "Snyder\u0027s of Hanover Pretzel Pieces - Hot Buff",
+            "category": "Food",
+            "quantity": "27",
+            "sales": "62.0"
+        },
+        {
+            "product": "Spindrift - Sparkling Water  Grapefruit",
+            "category": "Carbonated",
+            "quantity": "10",
+            "sales": "15.0"
+        },
+        {
+            "product": "Spindrift - Sparkling Water  Lime",
+            "category": "Carbonated",
+            "quantity": "60",
+            "sales": "88.5"
+        },
+        {
+            "product": "Spindrift - Sparkling Water - Pineapple",
+            "category": "Carbonated",
+            "quantity": "56",
+            "sales": "84.0"
+        },
+        {
+            "product": "Spindrift - Sparkling Water Raspberry Lime",
+            "category": "Non Carbonated",
+            "quantity": "2",
+            "sales": "3.0"
+        },
+        {
+            "product": "Starbucks Doubleshot Energy - Mocha",
+            "category": "Non Carbonated",
+            "quantity": "133",
+            "sales": "470.5"
+        },
+        {
+            "product": "Starbucks Refresher - Real Coconut Water",
+            "category": "Carbonated",
+            "quantity": "111",
+            "sales": "337.0"
+        },
+        {
+            "product": "Stretch Island Fruit Leathers Snacks - Variet",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "7.0"
+        },
+        {
+            "product": "SunChips Multigrain - French Onion",
+            "category": "Food",
+            "quantity": "47",
+            "sales": "70.5"
+        },
+        {
+            "product": "SunChips Multigrain - Harvest Cheddar",
+            "category": "Food",
+            "quantity": "235",
+            "sales": "352.5"
+        },
+        {
+            "product": "SunChips Multigrain - Original",
+            "category": "Food",
+            "quantity": "156",
+            "sales": "234.0"
+        },
+        {
+            "product": "SunChips Multigrain - Salsa",
+            "category": "Food",
+            "quantity": "205",
+            "sales": "307.5"
+        },
+        {
+            "product": "Sunkist Soda - Orange",
+            "category": "Carbonated",
+            "quantity": "290",
+            "sales": "381.5"
+        },
+        {
+            "product": "Takis - Hot Chilli Pepper \u0026 Lime",
+            "category": "Food",
+            "quantity": "97",
+            "sales": "144.5"
+        },
+        {
+            "product": "Takis FUGEO mini",
+            "category": "Food",
+            "quantity": "83",
+            "sales": "123.75"
+        },
+        {
+            "product": "TruBar - Cookie Dough",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "17.5"
+        },
+        {
+            "product": "TruBar - Daydreaming about Donuts",
+            "category": "Food",
+            "quantity": "7",
+            "sales": "17.5"
+        },
+        {
+            "product": "V8 Vegetable Juice - Original",
+            "category": "Non Carbonated",
+            "quantity": "28",
+            "sales": "48.5"
+        },
+        {
+            "product": "Vitamin Water - Ice Cool Blue Lavender",
+            "category": "Water",
+            "quantity": "11",
+            "sales": "29.25"
+        },
+        {
+            "product": "Vitamin Water - Squeezed Lemonade",
+            "category": "Water",
+            "quantity": "25",
+            "sales": "67.75"
+        },
+        {
+            "product": "Vitamin Water - XXX Acai BB Pomegranate",
+            "category": "Water",
+            "quantity": "17",
+            "sales": "46.75"
+        },
+        {
+            "product": "Wonderful Pistachios - Variety",
+            "category": "Food",
+            "quantity": "196",
+            "sales": "392.0"
+        },
+        {
+            "product": "Zevia Organic Tea - Peach",
+            "category": "Non Carbonated",
+            "quantity": "4",
+            "sales": "10.0"
+        },
+        {
+            "product": "Zevia Zero Calorie Energy - Mango Ginger",
+            "category": "Non Carbonated",
+            "quantity": "6",
+            "sales": "15.0"
+        },
+        {
+            "product": "Zone Perfect - Chocolate Chip Cookie Dough",
+            "category": "Food",
+            "quantity": "4",
+            "sales": "8.0"
+        }
+    ]
+}

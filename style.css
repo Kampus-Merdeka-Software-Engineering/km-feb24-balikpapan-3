@@ -413,7 +413,25 @@ body {
   pointer-events: all;
 }
 
+/* Efek Transisi */
+.navbar-link {
+  transition: color 0.3s ease-in-out;
+}
 
+/* Animasi Hover */
+.navbar-link:hover {
+  color: var(--chrome-yellow); /* Ganti dengan warna yang Anda inginkan */
+  transform: scale(1.25); /* Perbesar sedikit saat dihover */
+}
+
+/* Animasi Logo */
+.logo-white {
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg); /* Putar logo saat dihover */
+}
 
 
 
@@ -583,8 +601,17 @@ body {
   color: white;
   height: 50px;
   border-radius: 10px;
-  border: 1px solid rgb(86, 86, 86);
+  border: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.3); /* Stroke biru */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk transformasi dan bayangan */
 }
+
+#submitButton:hover {
+  transform: scale(1.1); /* Perbesar tombol saat dihover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 5px var(--purple-navy); /* Tambahkan bayangan dan stroke merah saat dihover */
+}
+
+
 
 .pop-up {
   position: relative;
@@ -659,6 +686,7 @@ align-items: center;
 .service-card:hover .card-icon {
   background-color: var(--winter-sky);
 }
+
 
 .service-card .card-icon ion-icon {
   font-size: 5rem;
@@ -1244,6 +1272,7 @@ align-items: center;
 
   .logo-white {
     color: var(--color);
+    padding-top: 15px;
   }
 
 

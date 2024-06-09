@@ -15,6 +15,29 @@ let machine;
 let zales;
 let linechart;
 let alltransactions = [];
+let product;
+let categoryproduct;
+let quantity;
+let sales;
+
+
+// fetchdata("./json/product.json").then((res) => {
+//   product = res;
+//   let allproduct = revenue.transactionByProduct.map((datum) => {
+//     return datum.product;
+//   });
+
+//   categoryproduct = revenue.transactionByProduct.map((datum) => {
+//     return datum.category;
+//   });
+
+//   quantity = revenue.transactionByProduct.map((datum) => {
+//     return datum.quantity;
+//   });
+
+//   sales = revenue.transactionByProduct.map((datum) => {
+//     return datum.sales;
+//   });
 
 fetchdata("./json/x1364.json").then((res) => {
   zales = res;
@@ -497,6 +520,8 @@ const handleClose = () => {
 
 btnClose.addEventListener("click", handleClose);
 
+
+//TABLE
 new gridjs.Grid({
   columns: ["Product", "Category", "Quantity", "Sales"],
   data: alltransactions ?? [],
@@ -517,8 +542,12 @@ new gridjs.Grid({
   pagination: true,
   sort: true,
   search: true,
+  language: {
+    search: {
+      placeholder: 'Search a product...' // Mengganti placeholder untuk kolom pencarian
+    }
+  },
   className: {
-    // td: 'my-td-class',
     pagination: "pagination",
   },
 }).render(document.getElementById("wrapper"));
