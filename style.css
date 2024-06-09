@@ -182,7 +182,53 @@ body {
   padding-inline: 15px;
 }
 
-.h2,
+/* Existing styles in style.css */
+
+/* Updated styles in style.css */
+
+/* General styles */
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+
+
+/* Chart styles */
+.chart-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chartjs-render-monitor {
+  background-color: #333;
+  color: #eee;
+}
+
+/* Section styles */
+.section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+  color: #eee;
+}
+
+ul {
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+  color: #eee;
+}
+
 .h3 {
   font-family: var(--ff-source-sans-pro);
 }

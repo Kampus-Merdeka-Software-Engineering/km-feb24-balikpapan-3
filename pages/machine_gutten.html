@@ -7,70 +7,72 @@
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer data-deferred="1"></script>
 </head>
 <body>
   <header class="header" data-header>
-    <div class="container">
-
-      <div class="overlay" data-overlay></div>
-
-      <figure class="about-banner">
-        <img class="logo-white" loading="lazy" decoding="async" src="../assets/logo-white.png" width="200px" height="200px" 
-          alt="about banner">
-      </figure>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">Vendzone</a>
-
-          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
+        <div class="container">
+    
+          <div class="overlay" data-overlay></div>
+    
+          <figure class="about-banner">
+            <img class="logo-white" loading="lazy" decoding="async" src="../assets/logo-white.png" width="100px" height="100px"
+              alt="about banner">
+          </figure>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="navbar-top">
+              <a href="#" class="logo">Vendzone</a>
+    
+              <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>Home</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>About</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>Data</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>Machine</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>Contact Us</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link" data-navbar-link>Our Team</a>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+          <a href="../index.html" class="btn">
+            <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+    
+            <span>Get Yours Now!</span>
+          </a>
+    
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
           </button>
+    
         </div>
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>Data</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>Machine</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>Contact Us</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="../index.html" class="navbar-link" data-navbar-link>Our Team</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <a href="../index.html" class="btn">
-        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-
-        <span>Get Yours Now!</span>
-      </a>
-
-      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-    </div>
-  </header>
+      </header>
 
   <section class="navbar-machine" id="home"></section>
 
@@ -114,65 +116,208 @@
 
     <footer class="footer">
         <div class="footer-top section">
-            <div class="container">
-                <div class="footer-brand">
-                    <a href="#" class="logo">Agency</a>
-                    <p class="text">Vendzone as a vending machine factory and source the world's leading automatic, will deliver Your smart vending retail business solution!</p>
-                    <ul class="social-list">
-                        <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                        <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                    </ul>
+          <div class="container footer-grid">
+            <div class="footer-brand">
+    
+              <a href="../index.html" class="logo">Vendzone</a>
+    
+              <p class="text">
+              Vendzone as a vending machine factory and source
+              the world's leading automatic, will deliver
+              Your smart vending retail business solution!
+              </p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="https://www.facebook.com/" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://www.instagram.com/" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="https://x.com/" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Our links</p>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">Home</a>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">About Us</a>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">Data</a>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">Machine</a>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">Contact Us</a>
+              </li>
+    
+              <li>
+                <a href="../index.html" class="footer-link">Our Team</a>
+              </li>
+    
+            </ul>
+    
+            <!-- <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Our Services</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Strategy & Research</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Web Development</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Web Solution</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Digital Marketing</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">App Design</a>
+              </li>
+    
+            </ul> -->
+    
+            <!-- <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Other links</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">FAQ</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Portfolio</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Privacy Policy</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Support</a>
+              </li>
+    
+            </ul> -->
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Contact Us</p>
+              </li>
+    
+              <li class="footer-item">
+    
+                <div class="footer-item-icon">
+                  <ion-icon name="call"></ion-icon>
                 </div>
-                <ul class="footer-list">
-                    <li><p class="footer-list-title">Our links</p></li>
-                    <li><a href="#" class="footer-link">Home</a></li>
-                    <li><a href="#" class="footer-link">About Us</a></li>
-                    <li><a href="#" class="footer-link">Data</a></li>
-                    <li><a href="#" class="footer-link">Machine</a></li>
-                    <li><a href="#" class="footer-link">Contact Us</a></li>
-                    <li><a href="#" class="footer-link">Our Team</a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li><p class="footer-list-title">Contact Us</p></li>
-                    <li class="footer-item">
-                        <div class="footer-item-icon"><ion-icon name="call"></ion-icon></div>
-                        <div>
-                            <a href="tel:+2786214313" class="footer-item-link">+62 8953 2989 0614</a>
-                            <a href="tel:+2786214313" class="footer-item-link">+62 8231 1939 0523</a>
-                        </div>
-                    </li>
-                    <li class="footer-item">
-                        <div class="footer-item-icon"><ion-icon name="mail"></ion-icon></div>
-                        <div>
-                            <a href="mailto:example@gmail.com" class="footer-item-link">vendzone@gmail.com</a>
-                            <a href="mailto:example@gmail.com" class="footer-item-link">info@vendzone.co.id</a>
-                        </div>
-                    </li>
-                    <li class="footer-item">
-                        <div class="footer-item-icon"><ion-icon name="location"></ion-icon></div>
-                        <address class="footer-item-link">Karangmenjangan No.15, Sukolilo, Surabaya</address>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li><p class="footer-list-title">Opening Hours</p></li>
-                    <li class="footer-item">
-                        <div class="footer-item-icon"><ion-icon name="time"></ion-icon></div>
-                        <time class="footer-item-link" datetime="09:00">Mon - Sat 09:00 - 18:00</time>
-                    </li>
-                    <li class="footer-item">
-                        <div class="footer-item-icon"><ion-icon name="time"></ion-icon></div>
-                        <time class="footer-item-link" datetime="09:00">Sun 09:00 - 13:00</time>
-                    </li>
-                </ul>
-            </div>
+    
+                <div>
+                  <a href="tel:+2786214313" class="footer-item-link">+62 8953 2989 0614</a>
+                  <a href="tel:+2786871365" class="footer-item-link">+62 8953 2090 8765</a>
+                </div>
+    
+              </li>
+    
+              <li class="footer-item">
+    
+                <div class="footer-item-icon">
+                  <ion-icon name="mail"></ion-icon>
+                </div>
+    
+                <div>
+                  <a href="mailto:info@agency.com" class="footer-item-link">vendzone@agency.com</a>
+                  <a href="mailto:help@agency.com" class="footer-item-link">helpdeskvendzone@agency.com</a>
+                </div>
+    
+              </li>
+    
+              <li class="footer-item">
+    
+                <div class="footer-item-icon">
+                  <ion-icon name="location"></ion-icon>
+                </div>
+    
+                <address class="footer-item-link">
+                  Central New Jersey, United States of America
+                </address>
+    
+              </li>
+    
+            </ul>
+    
+          </div>
         </div>
+    
         <div class="footer-bottom">
-            <div class="container">
-                <p class="copyright">&copy; 2024 <a href="#">Vendzone</a>. All Rights Reserved</p>
-            </div>
+          <p>
+          <p>
+          <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link"></a> Vendzone | Develop by Team3
+          </p>
         </div>
-    </footer>
+    
+      </footer>
+      <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
+    
+      <div class="over-lay">
+    
+        <div class="pop-up">
+    
+          <div class="pop-up-title-wrapper">
+          <button id="closeButton">
+            
+            <img id="x-icon" src="../assets/x.png" style="width: 20px; height: 20px;" />
+          </button>
+          </div>
+          <img id="pop-up-icon" src="../assets/check.gif" style="width: 100px; height: 100px;" />
+    
+          <p class="pop-up-message">
+            Data Terkirim
+          </p>  
+        </div>
+      </div>
 
     <script>
         const ctx1 = document.getElementById('chart1').getContext('2d');
