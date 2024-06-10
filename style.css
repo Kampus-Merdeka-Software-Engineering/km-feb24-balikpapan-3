@@ -197,7 +197,20 @@ body {
 }
 
 /* Header styles */
+.hero {
+  background-image: url(./assets/home-vend.gif);
+  background-size: cover;
+}
 
+.hero-subtitle {
+  color: white;
+  font-weight: bold;
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+}
+
+.about-banner {
+  padding-top: 12px;
+}
 
 /* Chart styles */
 .chart-container {
@@ -213,7 +226,7 @@ body {
 
 /* Section styles */
 .section {
-  margin: 20px 0;
+  /* margin: 20px 0; */
   text-align: center;
 }
 
@@ -345,6 +358,7 @@ ul {
   position: fixed;
   background-color: var(--st-patricks-blue);
   box-shadow: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+  padding-block: 0px;
 }
 
 .header .container {
@@ -491,7 +505,7 @@ ul {
     var(--gradient-1); */
   /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: -280px bottom, center, center;
-  background-size: auto, cover, auto;
+  /* background-size: auto, cover, auto; */
   padding-block-start: 80px;
   padding-block-end: var(--section-padding);
 }
@@ -956,6 +970,7 @@ align-items: center;
   background-size: auto, 200%;
   background-position: center, center;
   color: var(--white);
+  padding-block: 0px;
 }
 
 .footer-brand {
