@@ -76,10 +76,6 @@
 
 }
 
-
-
-
-
 /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
@@ -134,11 +130,12 @@ img {
 }
 
 .img-ayam {
-  height: 325px;
+  height: 100%;
   width: 250px;
 }
 
 address {
+  text-align: left;
   font-style: normal;
 }
 
@@ -171,9 +168,6 @@ body {
 }
 
 
-
-
-
 /*-----------------------------------*\
     #REUSED STYLE
   \*-----------------------------------*/
@@ -181,13 +175,6 @@ body {
 .container {
   padding-inline: 15px;
 }
-
-/* Existing styles in style.css */
-
-/* Updated styles in style.css */
-
-/* General styles */
-
 
 .container {
   width: 100%;
@@ -206,6 +193,11 @@ body {
   color: white;
   font-weight: bold;
   text-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+}
+
+.ayam-pic{
+  margin-left: 130px;
+  height: 100%;
 }
 
 .about-banner {
@@ -329,10 +321,6 @@ ul {
   height: 100%;
   object-fit: cover;
 }
-
-
-
-
 
 /*-----------------------------------*\
     #HEADER
@@ -497,18 +485,12 @@ ul {
 }
 
 
-
 /*-----------------------------------*\
     #HERO
   \*-----------------------------------*/
 
 .hero {
-  /* background-image: url("../images/hero-bg-bottom.png"),
-    url("../images/hero-bg.png"),
-    var(--gradient-1); */
-  /* background-repeat: no-repeat, no-repeat, no-repeat; */
   background-position: -280px bottom, center, center;
-  /* background-size: auto, cover, auto; */
   padding-block-start: 80px;
   padding-block-end: var(--section-padding);
 }
@@ -542,20 +524,16 @@ ul {
 /*-----------------------------------*\
     #Navbar machine
   \*-----------------------------------*/
-
   .navbar-machine {
     background-color: var(--st-patricks-blue);
-    /* background-repeat: no-repeat, no-repeat, no-repeat; */
     background-position: -280px bottom, center, center;
     background-size: auto;
-    /* padding-block-start: 20px; */
-    /* padding-block-end: 100px; */
   }
+
 
 /*-----------------------------------*\
     #chart machine
   \*-----------------------------------*/
-
   .section-container {
     display: flex;
     justify-content: space-between;
@@ -606,7 +584,6 @@ ul {
 /*-----------------------------------*\
     #ABOUT
   \*-----------------------------------*/
-
 .about-banner {
   margin-block-end: 30px;
 }
@@ -614,11 +591,6 @@ ul {
 .about .section-title {
   margin-inline: auto;
 }
-
-/* .about .underline::before {
-  left: 0;
-  transform: translateX(0);
-} */
 
 .about-text {
   font-size: var(--fs-8);
@@ -683,6 +655,14 @@ ul {
   /* 2 columns */
 }
 
+canvas{
+  width: 100%;
+}
+
+.pie-chart-container{
+  width: 270px !important;
+}
+
 .chart-container-grid {
   display: block;
 }
@@ -690,7 +670,6 @@ ul {
 .chart-container-grid div{
   width: 100%;
   margin: 0 auto;
-  /* background-color: tomato; */
 }
 
 .chart-container-grid div:first-child{
@@ -734,14 +713,13 @@ ul {
   border: none;
   box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.3); /* Stroke biru */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk transformasi dan bayangan */
+ 
 }
 
 #submitButton:hover {
   transform: scale(1.1); /* Perbesar tombol saat dihover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 5px var(--purple-navy); /* Tambahkan bayangan dan stroke merah saat dihover */
 }
-
-
 
 .pop-up {
   position: relative;
@@ -765,6 +743,15 @@ align-items: center;
   justify-content: end;
 }
 
+#x-icon{
+  width: 20px; height: 20px;
+}
+
+#pop-up-icon{
+  width: 100px; 
+  height: 100px;
+}
+
 .pop-up-message {
   display: flex;
   flex-grow: 1;
@@ -786,10 +773,16 @@ align-items: center;
 /*-----------------------------------*\
     #SERVICE
   \*-----------------------------------*/
-
 .service-list {
   display: grid;
   gap: 30px;
+}
+
+.service-card-pic{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%;
 }
 
 .service-card {
@@ -802,13 +795,9 @@ align-items: center;
 }
 
 .price{
-  /* position: absolute;
-  bottom: 8px;
-  left: 8px; */
   width: 55px;
   text-align: center;
   color: rgb(0, 0, 0);
-  /* background-color: green; */
   margin: 12px auto;
 }
 
@@ -867,12 +856,9 @@ align-items: center;
 
 
 
-
-
 /*-----------------------------------*\
     #FEATURE
   \*-----------------------------------*/
-
 .features-list>li:first-child {
   margin-block-end: 30px;
 }
@@ -912,16 +898,12 @@ align-items: center;
 }
 
 
-
-
-
 /*-----------------------------------*\
     #MACHINE
   \*-----------------------------------*/
-
-.machine {
+/* .machine {
   padding-block-end: 120px;
-}
+} */
 
 .machine-list {
   display: grid;
@@ -1008,6 +990,10 @@ align-items: center;
   justify-content: space-between;
 }
 
+#messageInput{
+  width: 100%;
+}
+
 .inputForm {
   width: 48%;
   display: inline-block;
@@ -1030,13 +1016,14 @@ align-items: center;
 
 #btn_submit {
   margin-top: 20px;
+  display: flex; 
+  justify-content: center;
 }
 
 
 /*-----------------------------------*\
     #FOOTER
   \*-----------------------------------*/
-
 .footer {
   font-size: var(--fs-8);
 }
@@ -1112,6 +1099,8 @@ align-items: center;
   text-decoration: underline;
 }
 
+
+
 .footer-item {
   display: flex;
   justify-content: flex-start;
@@ -1147,13 +1136,9 @@ align-items: center;
 }
 
 
-
-
-
 /*-----------------------------------*\
     #GO TO TOP
   \*-----------------------------------*/
-
 .go-top {
   position: fixed;
   bottom: 0;
@@ -1179,13 +1164,9 @@ align-items: center;
 }
 
 
-
-
-
 /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
-
 /**
    * responsive for larger than 550px screen
    */
@@ -1209,8 +1190,6 @@ align-items: center;
     --fs-3: 3.6rem;
   }
 
-
-
   /**
      * HEADER
      */
@@ -1222,8 +1201,6 @@ align-items: center;
     margin-inline-start: auto;
   }
 
-
-
   /**
      * ABOUT
      */
@@ -1231,8 +1208,6 @@ align-items: center;
   .stats-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-
 
   /**
      * BLOG
@@ -1253,8 +1228,6 @@ align-items: center;
     height: 100%;
   }
 
-
-
   /**
      * FOOTER
      */
@@ -1271,10 +1244,6 @@ align-items: center;
 
 }
 
-
-
-
-
 /**
    * responsive for larger than 768px screen
    */
@@ -1284,6 +1253,7 @@ align-items: center;
   .about .section-title {
     margin-inline: auto;
   }
+
   /**
      * REUSED STYLE
      */
@@ -1292,12 +1262,9 @@ align-items: center;
     max-width: 720px;
   }
 
-
-
   /**
      * HERO
      */
-
   .hero {
     min-height: 600px;
     display: grid;
@@ -1315,17 +1282,12 @@ align-items: center;
     gap: 30px;
   }
 
-
-
   /**
      * SERVICE
      */
-
   .service-list {
     grid-template-columns: 1fr 1fr;
   }
-
-
 
   /**
      * FEATURES
@@ -1341,8 +1303,6 @@ align-items: center;
     gap: 25px;
   }
 
-
-
   /**
      * FOOTER
      */
@@ -1352,10 +1312,6 @@ align-items: center;
   }
 
 }
-
-
-
-
 
 /**
    * responsive for larger than 992px screen
@@ -1377,8 +1333,6 @@ align-items: center;
 
   }
 
-
-
   /**
      * REUSED STYLE
      */
@@ -1387,15 +1341,9 @@ align-items: center;
     max-width: 950px;
   }
 
-
-
   /**
      * HEADER
      */
-
-  /* .header {
-    padding-block: 20px;
-  } */
 
   .overlay,
   .nav-open-btn,
@@ -1431,30 +1379,21 @@ align-items: center;
     padding-top: 15px;
   }
 
-
-
-
   /**
      * HERO
      */
-
   .hero {
     min-height: 700px;
   }
 
-
-
   /**
      * ABOUT
      */
-
   .about .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-
-
 
   /**
      * SERVICE
@@ -1464,12 +1403,9 @@ align-items: center;
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-
   /**
      * FEATURES
      */
-
   .features-list {
     grid-template-columns: 1fr;
   }
@@ -1490,14 +1426,9 @@ align-items: center;
     place-items: center;
   }
 
-
-
   /**
      * FOOTER
      */
-
-
-
   .footer-brand {
     grid-column: 1 / 5;
   }
@@ -1520,8 +1451,6 @@ align-items: center;
     --fs-3: 4.6rem;
   }
 
-
-
   /*HERO*/
   .hero {
     min-height: 800px;
@@ -1543,18 +1472,15 @@ align-items: center;
   }
 
   /*FOOTER*/
-  
   .footer-brand {
     grid-column: auto;
   }
 
 }
+
  /*-----------------------------------*\
-    OUR TEAM TERBARU
+    OUR TEAM 
   \*-----------------------------------*/
-
-
-
 .main-container {
     background: #fff;
     border-radius: 15px;
@@ -1621,7 +1547,6 @@ align-items: center;
 .footer-grid {
   grid-template-columns: auto 200px auto;
 }
-
 
 .desc {
   text-align: center;

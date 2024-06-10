@@ -21,24 +21,6 @@ let quantity;
 let sales;
 
 
-// fetchdata("./json/product.json").then((res) => {
-//   product = res;
-//   let allproduct = revenue.transactionByProduct.map((datum) => {
-//     return datum.product;
-//   });
-
-//   categoryproduct = revenue.transactionByProduct.map((datum) => {
-//     return datum.category;
-//   });
-
-//   quantity = revenue.transactionByProduct.map((datum) => {
-//     return datum.quantity;
-//   });
-
-//   sales = revenue.transactionByProduct.map((datum) => {
-//     return datum.sales;
-//   });
-
 fetchdata("./json/x1364.json").then((res) => {
   zales = res;
   alltransactions.push(...res.transactionByProduct);
@@ -63,8 +45,8 @@ fetchdata("./json/x1364.json").then((res) => {
           data: zalestransaction,
           // backgroundColor: "blue",
           borderWidth: 1,
-          backgroundColor: "rgb(0, 118, 255)",
-          borderColor: "rgb(255, 110, 96)",
+          backgroundColor: "hsl(275, 54%, 33%)",
+          borderColor: "hsl(0, 0%, 90%)",
         },
       ],
     },
@@ -174,13 +156,13 @@ fetchdata("./json/revenue.json").then((res) => {
       labels: machine,
       datasets: [
         {
-          label: "TransTotal",
+          label: "Trans Total",
           data: machinerevenue,
           borderWidth: 1,
           backgroundColor: "purple",
           borderWidth: 1,
-          backgroundColor: "rgb(255, 110, 96)",
-          borderColor: "rgba(165, 28, 39, 1)",
+          backgroundColor: "hsl(275, 54%, 33%)",
+          borderColor: "hsl(0, 0%, 90%)",
         },
       ],
     },
@@ -195,7 +177,6 @@ fetchdata("./json/revenue.json").then((res) => {
 });
 
 // MOST SELLING CATEGORY PER MACHINE BY LOCATION
-
 let mall;
 let gutten;
 let earl;
@@ -226,16 +207,12 @@ fetchdata("./json/mall.json").then((res) => {
       labels: category,
       datasets: [
         {
-          label: "Total Produk",
+          label: "Total Product",
           data: mallmostselling,
           borderWidth: 1,
-          backgroundColor: [
-            "rgb(94, 22, 117)",
-            "rgb(238, 66, 102)",
-            "rgb(255, 210, 63)",
-            "rgb(51, 115, 87)",
-          ],
-          borderColor: "rgba(255, 99, 132, 1)",
+          backgroundColor: "hsl(275, 54%, 33%)",
+
+          borderColor: "hsl(0, 0%, 90%)",
         },
       ],
     },
@@ -317,11 +294,11 @@ fetchdata("./json/top5product.json")
         labels: product,
         datasets: [
           {
-            label: 'product name',
+            label: 'Product Name',
             data: productSale,
             borderWidth: 1,
-            backgroundColor: "rgba(54, 162, 235, 0.2)",
-            borderColor: "rgba(54, 162, 235, 1)",
+            backgroundColor: "hsl(275, 54%, 33%)",
+            borderColor: "hsl(0, 0%, 90%)",
           },
         ],
       },
@@ -361,15 +338,13 @@ fetchdata("./json/payment.json")
             data: transactionPercentages,
             borderWidth: 1,
             backgroundColor: [
-              "rgb(255, 102, 102)", // Soft Red for Cash
-              "rgb(102, 178, 255)", // Soft Blue for Credit
-              "rgb(239, 31, 62)", // Default or other colors
+              "hsl(0, 0%, 90%)", 
+              "hsl(275, 54%, 33%)", 
             ],
-            borderColor: [
-              "rgba(255, 102, 102, 1)", // Soft Red border for Cash
-              "rgba(102, 178, 255, 1)", // Soft Blue border for Credit
-              "rgba(54, 162, 235, 1)", // Default or other border colors
-            ],
+            borderColor: [ 
+              "hsl(275, 54%, 33%)",
+              "hsl(0, 0%, 90%)",
+            ]
           },
         ],
       },
@@ -433,9 +408,9 @@ function validateForm() {
   var phone = phoneInput.value;
   var message = messageInput.value;
 
-  var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
-  var phoneRegex = /^\d+$/; // Only digits
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
+  var nameRegex = /^[A-Za-z\s]+$/; 
+  var phoneRegex = /^\d+$/; 
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
 
   if (
     name === "" ||
@@ -468,9 +443,9 @@ const handleSubmit = () => {
     var phone = phoneInput.value;
     var message = messageInput.value;
 
-    var nameRegex = /^[A-Za-z\s]+$/; // Only letters and spaces
-    var phoneRegex = /^\d+$/; // Only digits
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Email format
+    var nameRegex = /^[A-Za-z\s]+$/; 
+    var phoneRegex = /^\d+$/; 
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
 
     if (
       name === "" ||
@@ -544,7 +519,7 @@ new gridjs.Grid({
   search: true,
   language: {
     search: {
-      placeholder: 'Search a product...' // Mengganti placeholder untuk kolom pencarian
+      placeholder: 'Search a product...' 
     }
   },
   className: {
