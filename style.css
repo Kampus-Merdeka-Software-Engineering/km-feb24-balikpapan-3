@@ -284,7 +284,7 @@ ul {
 }
 
 .section {
-  padding-block: var(--section-padding);
+  /* padding-block: var(--section-padding); */
   background-color: black;
 }
 
@@ -347,7 +347,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  padding-block: 14px;
+  /* padding-block: 14px; */
   z-index: 4;
   transition: var(--transition-1);
 }
@@ -545,7 +545,7 @@ ul {
     /* background-repeat: no-repeat, no-repeat, no-repeat; */
     background-position: -280px bottom, center, center;
     background-size: auto;
-    padding-block-start: 50px;
+    padding-block-start: 20px;
     padding-block-end: 100px;
   }
 
@@ -1333,9 +1333,9 @@ align-items: center;
      * HEADER
      */
 
-  .header {
+  /* .header {
     padding-block: 20px;
-  }
+  } */
 
   .overlay,
   .nav-open-btn,
