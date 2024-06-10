@@ -345,13 +345,14 @@ ul {
 .header {
   --color: var(--white);
 
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   /* padding-block: 14px; */
   z-index: 4;
   transition: var(--transition-1);
+  background-color: var(--st-patricks-blue);
 }
 
 .header.active {
@@ -547,8 +548,8 @@ ul {
     /* background-repeat: no-repeat, no-repeat, no-repeat; */
     background-position: -280px bottom, center, center;
     background-size: auto;
-    padding-block-start: 20px;
-    padding-block-end: 100px;
+    /* padding-block-start: 20px; */
+    /* padding-block-end: 100px; */
   }
 
 /*-----------------------------------*\
