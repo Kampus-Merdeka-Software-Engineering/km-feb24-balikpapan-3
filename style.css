@@ -1511,3 +1511,10 @@ align-items: center;
 .footer-grid {
   grid-template-columns: auto 200px auto !important;
 }
+
+
+.desc {
+  text-align: center;
+  color: #1e1c1c; /* Warna teks yang kontras */
+  font-size: var(--font-size, 14px); 
+}
