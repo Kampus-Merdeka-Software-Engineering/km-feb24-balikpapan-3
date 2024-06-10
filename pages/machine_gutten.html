@@ -79,25 +79,29 @@
     <div class="section">
         <h2>GuttenPlans x1367</h2>
         <div class="container">
-          <div class="section-container">
-              <div class="text-content">
-                <h2>Insights:</h2>
+          <div class="flex-container">
+              <div class="chart-container">
+                  <canvas id="chart1"></canvas>
+              </div>
+              <div class="chart-container">
+                  <canvas id="chart2"></canvas>
+              </div>
+          </div>
+          <div class="flex-container">
+              <div class="flex-item">
+                <div class ="text-content">
+                  <h2>Insights:</h2>
                 <ul>
                     <li>Pada machine GuttenPlans x1367, hanya 3 kategori yang diminati oleh pelanggan, yakni kategori karbonat, makanan, dan nonkarbonat. Dilihat dari jumlah pembelian, dari kategori karbonat pelanggan lebih menyukai produk Coca Cola - Reguler, Monster Energy Original, dan Sunkist Soda - Orange. Pada kategori makanan, konsumen lebih banyak membeli produk KitKat - Crisp Wafers, Cheetos - Fleming Hot Crunchy, dan Funyuns - Flaming Hot. Sedangkan produk dari kategori nonkarbonat yang diminati oleh konsumen adalah Snapple Tea - Raspberry, Snapple Tea - Lemon, dan Snapple Tea - Peach.</li>
                     <li>Jumlah dari hasil transaksi selama 12 bulan pada mesin GuttenPlans x1367 adalah 6904.25</li>
                     <li>Jenis pembayaran yang paling banyak digunakan adalah Cash dengan jumlah 2827</li> 
-                     <li>Jenis pembayaran Credit berada di urutan kedua dengan jumlah 583</li>   
-                    
+                     <li>Jenis pembayaran Credit berada di urutan kedua dengan jumlah 771</li>   
+                </ul>
               </div>
-              <div class="chart-content">
-                  <div class="chart-container">
-                      <canvas id="chart1"></canvas>
-                  </div>
-              </div>
-          </div>
-          <div class="section-container">
-              <div class="text-content">
-                <h2>Recommendations:</h2>
+            </div>
+              <div class="flex-item">
+                <div class ="text-content">
+                  <h2>Recommendations:</h2>
                 <ul>
                     <li>Mempermudah pemakaian metode pembayaran cash dengan menyediakan sistem kembalian di machine GuttenPlans x1367.</li>
                     <li>Mempertahankan produk dengan penjualan top 3 teratas di machine GuttenPlans x1367 pada masing-masing kategori.</li>
@@ -105,13 +109,10 @@
                     <li>Menambahkan pembayaran lain seperti debit atau Qris untuk metode pembelian, karena mengikuti perkembangan zaman dan pembayaran yang lebih mudah dan bervariasi.</li>
                 </ul>
               </div>
-              <div class="chart-content">
-                  <div class="chart-container">
-                      <canvas id="chart2"></canvas>
-                  </div>
-              </div>
+            </div>
           </div>
       </div>
+  </div>
 
     <footer class="footer">
       <div class="footer-top section">
@@ -364,7 +365,7 @@
                     },
                     {
                         label: 'Credit',
-                        data: [355, 335, 308, 1473, 771],
+                        data: [355, 308, 335, 1473, 771],
                         backgroundColor: 'rgba(54, 162, 235, 0.5)', // Blue bars with transparency
                         borderColor: 'rgba(54, 162, 235, 1)', // Blue border
                         borderWidth: 1
