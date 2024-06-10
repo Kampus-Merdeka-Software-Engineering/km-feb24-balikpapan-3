@@ -682,6 +682,20 @@ ul {
   /* 2 columns */
 }
 
+.chart-container-grid {
+  display: block;
+}
+
+.chart-container-grid div{
+  width: 100%;
+  margin: 0 auto;
+  /* background-color: tomato; */
+}
+
+.chart-container-grid div:first-child{
+  grid-column: span 2;
+}
+
 @media (max-width: 768px) {
   .footer-grid{
     grid-template-columns: repeat(3, 1fr);
@@ -783,6 +797,18 @@ align-items: center;
   border-radius: var(--radius-12);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
   background-color: #fff;
+  position: relative;
+}
+
+.price{
+  /* position: absolute;
+  bottom: 8px;
+  left: 8px; */
+  width: 55px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  /* background-color: green; */
+  margin: 12px auto;
 }
 
 .service-card .card-icon {
@@ -1164,7 +1190,11 @@ align-items: center;
    */
 
 @media (min-width: 550px) {
-
+  .chart-container-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 35px;
+  }
   /**
      * REUSED STYLE
      */
