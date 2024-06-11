@@ -110,7 +110,41 @@ fetchdata("./json/x1380.json").then((res) => {
   });
 
   alltransactions.push(...res.transactionByProduct);
+
+  //TABLE
+new gridjs.Grid({
+  columns: ["Product", "Category", "Quantity", "Sales"],
+  data: alltransactions ?? [],
+  style: {
+    table: {
+      border: '3px solid #fff,'
+    },
+    th: {
+      'background-color': 'rgba(30, 36, 112, 255)',
+      color: '#fff',
+      'border-bottom': '3px solid #ccc',
+      'text-align': 'center'
+    },
+    td: {
+      'text-align': 'center'
+    }
+  },
+  pagination: true,
+  sort: true,
+  search: true,
+  language: {
+    search: {
+      placeholder: 'Search a product...' 
+    }
+  },
+  className: {
+    pagination: "pagination",
+  },
+}).render(document.getElementById("wrapper"));
+
 });
+
+
 
 let selectElementMachine = document.getElementsByClassName("machine-filter");
 
@@ -496,33 +530,4 @@ const handleClose = () => {
 btnClose.addEventListener("click", handleClose);
 
 
-//TABLE
-new gridjs.Grid({
-  columns: ["Product", "Category", "Quantity", "Sales"],
-  data: alltransactions ?? [],
-  style: {
-    table: {
-      border: '3px solid #fff,'
-    },
-    th: {
-      'background-color': 'rgba(30, 36, 112, 255)',
-      color: '#fff',
-      'border-bottom': '3px solid #ccc',
-      'text-align': 'center'
-    },
-    td: {
-      'text-align': 'center'
-    }
-  },
-  pagination: true,
-  sort: true,
-  search: true,
-  language: {
-    search: {
-      placeholder: 'Search a product...' 
-    }
-  },
-  className: {
-    pagination: "pagination",
-  },
-}).render(document.getElementById("wrapper"));
+
